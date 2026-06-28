@@ -1,0 +1,8 @@
+name: deeplabv3p_resnet50
+architecture: DeepLabV3Plus
+encoder: resnet50
+encoder_weights: imagenet
+in_channels: 3
+classes: 1
+activation: null
+checkpoint: null

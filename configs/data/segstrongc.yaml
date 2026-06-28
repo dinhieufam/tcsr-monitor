@@ -1,0 +1,11 @@
+name: segstrongc
+root: ${oc.env:SEGSTRONGC_ROOT,data/raw/segstrongc}
+processed_dir: data/processed/segstrongc
+num_classes: 2
+img_size: [512, 512]
+fps: 25
+train_sequences: []
+cal_sequences: []
+test_sequences: []          # fill in after download
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]

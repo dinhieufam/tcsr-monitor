@@ -1,0 +1,222 @@
+{
+  "experiment": "E10 Cross-Dataset Evaluation",
+  "status": "completed_with_one_class_label_limitation",
+  "dataset": "cholecseg8k",
+  "n_frames": 8080,
+  "n_clips": 17,
+  "artifact_inventory": {
+    "frames": 8080,
+    "masks": 8080,
+    "prediction_probability_maps": 8080,
+    "manifest": "data/processed/cholecseg8k/manifest.parquet",
+    "features": "data/processed/cholecseg8k/features_all.parquet",
+    "labels": "data/processed/cholecseg8k/labels.parquet",
+    "baselines": "data/processed/cholecseg8k/baselines.parquet"
+  },
+  "segmentation_quality": {
+    "mean_iou": 0.12756927740562052,
+    "median_iou": 0.1231047516731806,
+    "std_iou": 0.08062329635064687,
+    "min_iou": 0.0,
+    "max_iou": 0.4169817776646985,
+    "failure_rate_tau0_50": 1.0,
+    "failure_rate_tau0_60": 1.0,
+    "failure_rate_tau0_75": 1.0
+  },
+  "metrics_note": "AUROC and AUPRC are unavailable because every CholecSeg8k frame is a failure at tau=0.50, tau=0.60, and tau=0.75 under the cached prediction/label pipeline.",
+  "monitor_results": {
+    "endovis_clean_seed0": {
+      "description": "EndoVis clean-trained monitor, seed 0",
+      "feature_columns": [
+        "conf_mean_fg_prob",
+        "conf_max_prob",
+        "conf_mean_entropy",
+        "conf_max_entropy",
+        "conf_frac_uncertain",
+        "conf_margin",
+        "conf_frac_fg",
+        "shape_area_frac",
+        "shape_n_components",
+        "shape_boundary_len",
+        "shape_max_eccentricity",
+        "shape_max_solidity",
+        "shape_perimeter",
+        "temp_prev_iou",
+        "temp_centroid_jump",
+        "temp_area_delta",
+        "temp_rolling_iou_mean",
+        "temp_rolling_iou_std",
+        "qual_brightness",
+        "qual_blur_score",
+        "qual_contrast",
+        "qual_specular_ratio"
+      ],
+      "n_feature_columns": 22,
+      "threshold_source": "experiments/seed0/conformal_threshold.json",
+      "threshold": 0.11342084407806396,
+      "endovis_calibrated_miss_rate_on_external_all_failures": 1.0,
+      "external_alarm_rate": 0.0,
+      "external_miss_rate_ci": {
+        "ci_lo": 1.0,
+        "ci_hi": 1.0
+      },
+      "failure_tau0_50": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "failure_tau0_60": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "failure_tau0_75": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "pearson_score_vs_one_minus_iou": null,
+      "spearman_score_vs_one_minus_iou": null,
+      "spearman_ci": {
+        "ci_lo": null,
+        "ci_hi": null
+      }
+    },
+    "endovis_combined_seed0": {
+      "description": "EndoVis clean+corrupted combined monitor, seed 0",
+      "feature_columns": [
+        "conf_mean_fg_prob",
+        "conf_max_prob",
+        "conf_mean_entropy",
+        "conf_max_entropy",
+        "conf_frac_uncertain",
+        "conf_margin",
+        "conf_frac_fg",
+        "shape_area_frac",
+        "shape_n_components",
+        "shape_boundary_len",
+        "shape_max_eccentricity",
+        "shape_max_solidity",
+        "shape_perimeter",
+        "temp_prev_iou",
+        "temp_centroid_jump",
+        "temp_area_delta",
+        "temp_rolling_iou_mean",
+        "temp_rolling_iou_std",
+        "qual_brightness",
+        "qual_blur_score",
+        "qual_contrast",
+        "qual_specular_ratio"
+      ],
+      "n_feature_columns": 22,
+      "threshold_source": "experiments/combined_seed0/conformal_threshold.json",
+      "threshold": 0.30250260390733386,
+      "endovis_calibrated_miss_rate_on_external_all_failures": 0.02363861386138614,
+      "external_alarm_rate": 0.9763613861386139,
+      "external_miss_rate_ci": {
+        "ci_lo": 0.020297029702970298,
+        "ci_hi": 0.026983292079207917
+      },
+      "failure_tau0_50": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "failure_tau0_60": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "failure_tau0_75": {
+        "prevalence": 1.0,
+        "n_failures": 8080,
+        "n_total": 8080,
+        "auroc": null,
+        "auprc": null
+      },
+      "pearson_score_vs_one_minus_iou": 0.16980083923184722,
+      "spearman_score_vs_one_minus_iou": 0.3516392574505612,
+      "spearman_ci": {
+        "ci_lo": 0.33135049576843595,
+        "ci_hi": 0.372590552981881
+      }
+    }
+  },
+  "baseline_results": {
+    "bl_max_softmax": {
+      "prevalence_tau0_50": 1.0,
+      "auroc_tau0_50": null,
+      "auprc_tau0_50": null,
+      "pearson_score_vs_one_minus_iou": 0.2430641238880416,
+      "spearman_score_vs_one_minus_iou": 0.5512028981787801,
+      "spearman_ci": {
+        "ci_lo": 0.5368565382520241,
+        "ci_hi": 0.5682503165351273
+      },
+      "endovis_calibrated_threshold_tau0_50": 0.0,
+      "endovis_calibrated_miss_rate_on_external_all_failures": 0.0,
+      "external_alarm_rate": 1.0,
+      "external_miss_rate_ci": {
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      }
+    },
+    "bl_entropy": {
+      "prevalence_tau0_50": 1.0,
+      "auroc_tau0_50": null,
+      "auprc_tau0_50": null,
+      "pearson_score_vs_one_minus_iou": -0.5666976266058661,
+      "spearman_score_vs_one_minus_iou": -0.6037710880129189,
+      "spearman_ci": {
+        "ci_lo": -0.6197955712856309,
+        "ci_hi": -0.5893587507978664
+      },
+      "endovis_calibrated_threshold_tau0_50": 0.02892175130546093,
+      "endovis_calibrated_miss_rate_on_external_all_failures": 0.0,
+      "external_alarm_rate": 1.0,
+      "external_miss_rate_ci": {
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      }
+    },
+    "bl_temporal_heuristic": {
+      "prevalence_tau0_50": 1.0,
+      "auroc_tau0_50": null,
+      "auprc_tau0_50": null,
+      "pearson_score_vs_one_minus_iou": 0.3303058285290523,
+      "spearman_score_vs_one_minus_iou": 0.2564676632390503,
+      "spearman_ci": {
+        "ci_lo": 0.23283091084985516,
+        "ci_hi": 0.27893921478173256
+      },
+      "endovis_calibrated_threshold_tau0_50": 0.0,
+      "endovis_calibrated_miss_rate_on_external_all_failures": 0.0,
+      "external_alarm_rate": 1.0,
+      "external_miss_rate_ci": {
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      }
+    }
+  },
+  "outputs": {
+    "summary_csv": "results/metrics/external/cholecseg8k_external_summary.csv",
+    "by_clip_csv": "results/metrics/external/cholecseg8k_by_clip.csv",
+    "score_parquet": "experiments/external_cholecseg8k/cholecseg8k_external_scores.parquet",
+    "figures": [
+      "results/figures/external/cholecseg8k_iou_distribution.png",
+      "results/figures/external/cholecseg8k_score_vs_iou.png",
+      "results/figures/external/cholecseg8k_external_miss_rates.png"
+    ]
+  },
+  "publication_interpretation": "Use as a limitations audit, not as positive external validation. The external segmenter/mask pipeline produces near-universal failure, so binary failure-detection discrimination cannot be assessed."
+}

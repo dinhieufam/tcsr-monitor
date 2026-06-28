@@ -1,0 +1,70 @@
+data:
+  name: endovis2017
+  root: ${oc.env:ENDOVIS2017_ROOT,data/raw/endovis2017}
+  processed_dir: data/processed/endovis2017
+  num_classes: 2
+  img_size:
+  - 512
+  - 512
+  fps: 25
+  train_sequences:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  cal_sequences:
+  - 7
+  test_sequences:
+  - 8
+  - 9
+  - 10
+  mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  std:
+  - 0.229
+  - 0.224
+  - 0.225
+seg_model:
+  name: unet_resnet34
+  architecture: Unet
+  encoder: resnet34
+  encoder_weights: imagenet
+  in_channels: 3
+  classes: 1
+  activation: null
+  checkpoint: experiments/2026-06-02_13-48-40/checkpoint_best.pth
+features:
+  name: all
+  groups:
+    confidence: true
+    shape: true
+    temporal: true
+    quality: true
+    shift: true
+  temporal_window: 5
+  shift_n_neighbors: 10
+  shift_method: mahalanobis
+  encoder_layer: layer4
+monitor:
+  _target_: tcsr.monitor.classifiers.XGBMonitor
+  n_estimators: 400
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  scale_pos_weight: null
+  eval_metric: aucpr
+  early_stopping_rounds: 30
+conformal:
+  name: split_conformal
+  alpha: 0.1
+  score_type: one_minus_prob
+  calibration_split: cal
+seed: 42
+output_dir: experiments/${now:%Y-%m-%d_%H-%M-%S}
+failure_tau: 0.75
+monitor_dir: experiments/combined_seed0

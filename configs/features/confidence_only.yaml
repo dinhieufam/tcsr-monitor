@@ -1,0 +1,12 @@
+name: confidence_only
+groups:
+  confidence: true
+  shape: false
+  temporal: false
+  quality: false
+  shift: false
+
+temporal_window: 5
+shift_n_neighbors: 10
+shift_method: mahalanobis
+encoder_layer: layer4

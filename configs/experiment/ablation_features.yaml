@@ -1,0 +1,11 @@
+defaults:
+  - override /data: endovis2017
+  - override /seg_model: unet_resnet34
+  - override /monitor: xgboost
+  - override /conformal: split_conformal
+  - _self_
+
+feature_variants: [all, confidence_only, no_temporal, no_shift]
+failure_tau: [0.5]
+seeds: [0, 1, 2]
+description: "Feature ablation study"

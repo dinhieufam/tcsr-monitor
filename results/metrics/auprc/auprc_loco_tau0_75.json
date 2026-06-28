@@ -1,0 +1,53 @@
+[
+  {
+    "protocol": "loco_tau75_micro",
+    "tau": 0.75,
+    "model": "TCSR-Monitor",
+    "source": "E3_score_file",
+    "n_frames": 24750,
+    "n_failures": 9264,
+    "failure_rate": 0.3743030303030303,
+    "prevalence_baseline_auprc": 0.3743030303030303,
+    "auroc": 0.9200740251599472,
+    "auroc_ci_lo": 0.916339720957227,
+    "auroc_ci_hi": 0.9240936140321004,
+    "auprc": 0.9026806149614582,
+    "auprc_ci_lo": 0.8982788196675723,
+    "auprc_ci_hi": 0.9073531230807842,
+    "n_bootstraps": 1000.0
+  },
+  {
+    "protocol": "loco_tau75_micro",
+    "tau": 0.75,
+    "model": "Learned confidence-only",
+    "source": "E3_score_file",
+    "n_frames": 24750,
+    "n_failures": 9264,
+    "failure_rate": 0.3743030303030303,
+    "prevalence_baseline_auprc": 0.3743030303030303,
+    "auroc": 0.9120376179097193,
+    "auroc_ci_lo": 0.9081643053102068,
+    "auroc_ci_hi": 0.9161130056147436,
+    "auprc": 0.8879538188642708,
+    "auprc_ci_lo": 0.88301058138409,
+    "auprc_ci_hi": 0.8927131480273299,
+    "n_bootstraps": 1000.0
+  },
+  {
+    "protocol": "loco_tau75_micro",
+    "tau": 0.75,
+    "model": "Entropy",
+    "source": "E3_score_file",
+    "n_frames": 24750,
+    "n_failures": 9264,
+    "failure_rate": 0.3743030303030303,
+    "prevalence_baseline_auprc": 0.3743030303030303,
+    "auroc": 0.5938921035312524,
+    "auroc_ci_lo": 0.5853653892034266,
+    "auroc_ci_hi": 0.6032689968634304,
+    "auprc": 0.633638201900679,
+    "auprc_ci_lo": 0.6251726560716907,
+    "auprc_ci_hi": 0.6426522272927296,
+    "n_bootstraps": 1000.0
+  }
+]

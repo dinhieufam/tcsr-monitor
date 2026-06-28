@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.egg-link
+site-packages/
+
+# uv
+.uv/
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Hydra / experiments
+outputs/
+multirun/
+experiments/
+
+# Data (only checksums committed)
+data/raw/
+data/interim/
+data/processed/
+
+# Model checkpoints (too large)
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+
+# Results (metrics committed, figures optional)
+results/figures/*.png
+results/figures/*.pdf
+
+# Notebooks output (nbstripout should handle this, belt-and-suspenders)
+.ipynb_checkpoints/
+
+# Environment
+.env
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Wandb
+wandb/
+
+# Logs
+*.log
+logs/
+
+# Misc
+*.tmp
+*.bak

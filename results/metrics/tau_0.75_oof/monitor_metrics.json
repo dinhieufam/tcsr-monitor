@@ -1,0 +1,20 @@
+{
+  "auroc": 0.6392020433327461,
+  "auprc": 0.09771754373594113,
+  "brier": 0.0780330452078015,
+  "ece": 0.22708259587938134,
+  "recall_at_cov90": 0.9285714285714286,
+  "fa_per_min": 427.27272727272725,
+  "recall": 0.14285714285714285,
+  "precision": 0.008438818565400843,
+  "mean_lead_frames": 7.0,
+  "mean_lead_seconds": 0.28,
+  "median_lead_frames": 7.0,
+  "n_events": 1,
+  "frac_early_warning": 1.0,
+  "auroc_ci_lo": 0.5152552696104041,
+  "auroc_ci_hi": 0.7448269597694149,
+  "auprc_ci_lo": 0.01508417946231248,
+  "auprc_ci_hi": 0.26686070210014523,
+  "n_bootstraps": 1000
+}

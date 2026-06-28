@@ -1,0 +1,11 @@
+defaults:
+  - override /data: endovis2017
+  - override /seg_model: unet_resnet34
+  - override /features: all
+  - override /monitor: xgboost
+  - override /conformal: split_conformal
+  - _self_
+
+failure_tau: [0.5, 0.6, 0.75]
+seeds: [0, 1, 2]
+description: "Main in-domain experiment: TCSR-Monitor vs baselines on EndoVis 2017"

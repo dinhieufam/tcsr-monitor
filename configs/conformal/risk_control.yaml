@@ -1,0 +1,4 @@
+name: risk_control
+delta: 0.1                  # risk-control delta parameter
+epsilon: 0.1                # target risk level
+method: ltt                 # ltt (Learn-then-Test) | crc

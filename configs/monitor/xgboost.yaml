@@ -1,0 +1,9 @@
+_target_: tcsr.monitor.classifiers.XGBMonitor
+n_estimators: 400
+max_depth: 6
+learning_rate: 0.05
+subsample: 0.8
+colsample_bytree: 0.8
+scale_pos_weight: null      # null → auto-compute from class imbalance
+eval_metric: aucpr
+early_stopping_rounds: 30

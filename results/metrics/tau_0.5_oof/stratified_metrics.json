@@ -1,0 +1,23 @@
+{
+  "low_confidence": {
+    "n": 0,
+    "monitor_auroc": NaN,
+    "entropy_auroc": NaN
+  },
+  "tracking_loss": {
+    "n": 2,
+    "monitor_auroc": 0.6448828606658445,
+    "entropy_auroc": 0.49815043156596794
+  },
+  "ghost_mask": {
+    "n": 10,
+    "monitor_auroc": 0.5264488286066584,
+    "entropy_auroc": 0.9311960542540074
+  },
+  "other_fail": {
+    "n": 2,
+    "monitor_auroc": 0.876078914919852,
+    "entropy_auroc": 0.19482120838471023
+  },
+  "n_total_failures": 14
+}

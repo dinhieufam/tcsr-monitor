@@ -1,0 +1,8 @@
+name: unet_resnet34
+architecture: Unet
+encoder: resnet34
+encoder_weights: imagenet
+in_channels: 3
+classes: 1
+activation: null            # raw logits; sigmoid applied in predict.py
+checkpoint: experiments/2026-06-02_13-48-40/checkpoint_best.pth

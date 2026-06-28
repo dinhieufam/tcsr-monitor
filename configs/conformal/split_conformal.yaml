@@ -1,0 +1,4 @@
+name: split_conformal
+alpha: 0.1                  # target missed-failure rate
+score_type: one_minus_prob  # nonconformity score = 1 - P(failure)
+calibration_split: cal      # use the cal split for threshold calibration

@@ -1,0 +1,17 @@
+defaults:
+  - data: endovis2017
+  - seg_model: unet_resnet34
+  - features: all
+  - monitor: xgboost
+  - conformal: split_conformal
+  - _self_
+
+seed: 42
+output_dir: experiments/${now:%Y-%m-%d_%H-%M-%S}
+
+hydra:
+  run:
+    dir: ${output_dir}
+  sweep:
+    dir: ${output_dir}
+    subdir: ${hydra.job.override_dirname}

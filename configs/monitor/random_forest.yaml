@@ -1,0 +1,6 @@
+_target_: tcsr.monitor.classifiers.RFMonitor
+n_estimators: 300
+max_depth: null
+min_samples_leaf: 5
+class_weight: balanced
+n_jobs: -1

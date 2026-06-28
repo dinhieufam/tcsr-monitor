@@ -1,0 +1,14 @@
+defaults:
+  - override /seg_model: unet_resnet34
+  - override /features: all
+  - override /monitor: xgboost
+  - override /conformal: split_conformal
+  - _self_
+
+train_data: endovis2017
+test_data: cholecseg8k
+failure_tau: [0.5]
+seeds: [0, 1, 2]
+# No conformal guarantee claimed under distribution shift
+conformal_disclaimer: "Coverage guarantee does not transfer under dataset shift."
+description: "Cross-dataset: train monitor on EndoVis 2017, test on CholecSeg8k"

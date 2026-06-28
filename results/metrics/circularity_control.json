@@ -1,0 +1,382 @@
+{
+  "tau_0_75": {
+    "tau": 0.75,
+    "n_corrupted_total": 24750,
+    "n_corrupted_failed": 9264,
+    "n_corrupted_correct": 15486,
+    "failure_rate": 0.3743030303030303,
+    "alarm_threshold": 0.30250260390733386,
+    "within_corrupted_monitor_auroc": 0.9456449235612443,
+    "within_corrupted_monitor_auroc_ci_lo": 0.9426498355551609,
+    "within_corrupted_monitor_auroc_ci_hi": 0.9488369309967154,
+    "within_corrupted_entropy_auroc": 0.5938921035312524,
+    "within_corrupted_monitor_auprc": 0.9367695787815223,
+    "within_corrupted_entropy_auprc": 0.633638201900679,
+    "fa_rate_on_correct": 0.12643678160919541,
+    "n_alarms_on_correct": 1958,
+    "per_condition": {
+      "brightness_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 73,
+        "failure_rate": 0.08848484848484849,
+        "monitor_auroc_within_corrupted": 0.7685441562226756,
+        "entropy_auroc_within_corrupted": 0.28005683474205767,
+        "n_correct_frames": 752,
+        "fa_on_correct": 49,
+        "fa_rate_on_correct": 0.06515957446808511
+      },
+      "brightness_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 176,
+        "failure_rate": 0.21333333333333335,
+        "monitor_auroc_within_corrupted": 0.8440958117383388,
+        "entropy_auroc_within_corrupted": 0.39053964140635944,
+        "n_correct_frames": 649,
+        "fa_on_correct": 86,
+        "fa_rate_on_correct": 0.1325115562403698
+      },
+      "brightness_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 335,
+        "failure_rate": 0.40606060606060607,
+        "monitor_auroc_within_corrupted": 0.8022601279317698,
+        "entropy_auroc_within_corrupted": 0.2601797136765154,
+        "n_correct_frames": 490,
+        "fa_on_correct": 312,
+        "fa_rate_on_correct": 0.636734693877551
+      },
+      "brightness_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 790,
+        "failure_rate": 0.9575757575757575,
+        "monitor_auroc_within_corrupted": 0.9350452079566003,
+        "entropy_auroc_within_corrupted": 0.3931645569620253,
+        "n_correct_frames": 35,
+        "fa_on_correct": 35,
+        "fa_rate_on_correct": 1.0
+      },
+      "brightness_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc_within_corrupted": NaN,
+        "entropy_auroc_within_corrupted": NaN,
+        "n_correct_frames": 0,
+        "fa_on_correct": 0,
+        "fa_rate_on_correct": 0.0
+      },
+      "contrast_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc_within_corrupted": 0.876727550524342,
+        "entropy_auroc_within_corrupted": 0.7737863740537537,
+        "n_correct_frames": 748,
+        "fa_on_correct": 150,
+        "fa_rate_on_correct": 0.20053475935828877
+      },
+      "contrast_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 421,
+        "failure_rate": 0.5103030303030303,
+        "monitor_auroc_within_corrupted": 0.8907774981773712,
+        "entropy_auroc_within_corrupted": 0.819118788363397,
+        "n_correct_frames": 404,
+        "fa_on_correct": 378,
+        "fa_rate_on_correct": 0.9356435643564357
+      },
+      "contrast_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 797,
+        "failure_rate": 0.9660606060606061,
+        "monitor_auroc_within_corrupted": 0.9391468005018819,
+        "entropy_auroc_within_corrupted": 0.9241351496683994,
+        "n_correct_frames": 28,
+        "fa_on_correct": 28,
+        "fa_rate_on_correct": 1.0
+      },
+      "contrast_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc_within_corrupted": NaN,
+        "entropy_auroc_within_corrupted": NaN,
+        "n_correct_frames": 0,
+        "fa_on_correct": 0,
+        "fa_rate_on_correct": 0.0
+      },
+      "contrast_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc_within_corrupted": NaN,
+        "entropy_auroc_within_corrupted": NaN,
+        "n_correct_frames": 0,
+        "fa_on_correct": 0,
+        "fa_rate_on_correct": 0.0
+      },
+      "gaussian_blur_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 59,
+        "failure_rate": 0.07151515151515152,
+        "monitor_auroc_within_corrupted": 0.7731446652210471,
+        "entropy_auroc_within_corrupted": 0.4688232951276718,
+        "n_correct_frames": 766,
+        "fa_on_correct": 23,
+        "fa_rate_on_correct": 0.030026109660574413
+      },
+      "gaussian_blur_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 74,
+        "failure_rate": 0.08969696969696969,
+        "monitor_auroc_within_corrupted": 0.7803109367689927,
+        "entropy_auroc_within_corrupted": 0.45859574621225757,
+        "n_correct_frames": 751,
+        "fa_on_correct": 10,
+        "fa_rate_on_correct": 0.013315579227696404
+      },
+      "gaussian_blur_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 87,
+        "failure_rate": 0.10545454545454545,
+        "monitor_auroc_within_corrupted": 0.814861539419992,
+        "entropy_auroc_within_corrupted": 0.4397564090583434,
+        "n_correct_frames": 738,
+        "fa_on_correct": 8,
+        "fa_rate_on_correct": 0.01084010840108401
+      },
+      "gaussian_blur_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 100,
+        "failure_rate": 0.12121212121212122,
+        "monitor_auroc_within_corrupted": 0.8209103448275862,
+        "entropy_auroc_within_corrupted": 0.45302068965517234,
+        "n_correct_frames": 725,
+        "fa_on_correct": 4,
+        "fa_rate_on_correct": 0.005517241379310344
+      },
+      "gaussian_blur_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 110,
+        "failure_rate": 0.13333333333333333,
+        "monitor_auroc_within_corrupted": 0.8168213604577241,
+        "entropy_auroc_within_corrupted": 0.4524602670057215,
+        "n_correct_frames": 715,
+        "fa_on_correct": 8,
+        "fa_rate_on_correct": 0.011188811188811189
+      },
+      "gaussian_noise_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc_within_corrupted": 0.8019133273143969,
+        "entropy_auroc_within_corrupted": 0.42860615320508366,
+        "n_correct_frames": 748,
+        "fa_on_correct": 60,
+        "fa_rate_on_correct": 0.08021390374331551
+      },
+      "gaussian_noise_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 121,
+        "failure_rate": 0.14666666666666667,
+        "monitor_auroc_within_corrupted": 0.8030381292261457,
+        "entropy_auroc_within_corrupted": 0.42769768970698724,
+        "n_correct_frames": 704,
+        "fa_on_correct": 110,
+        "fa_rate_on_correct": 0.15625
+      },
+      "gaussian_noise_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 454,
+        "failure_rate": 0.5503030303030303,
+        "monitor_auroc_within_corrupted": 0.8277188691119369,
+        "entropy_auroc_within_corrupted": 0.38255340370709,
+        "n_correct_frames": 371,
+        "fa_on_correct": 249,
+        "fa_rate_on_correct": 0.6711590296495957
+      },
+      "gaussian_noise_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 823,
+        "failure_rate": 0.9975757575757576,
+        "monitor_auroc_within_corrupted": 0.9611178614823815,
+        "entropy_auroc_within_corrupted": 0.03827460510328068,
+        "n_correct_frames": 2,
+        "fa_on_correct": 2,
+        "fa_rate_on_correct": 1.0
+      },
+      "gaussian_noise_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc_within_corrupted": NaN,
+        "entropy_auroc_within_corrupted": NaN,
+        "n_correct_frames": 0,
+        "fa_on_correct": 0,
+        "fa_rate_on_correct": 0.0
+      },
+      "jpeg_compression_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc_within_corrupted": 0.8200369067032873,
+        "entropy_auroc_within_corrupted": 0.445326581409321,
+        "n_correct_frames": 764,
+        "fa_on_correct": 69,
+        "fa_rate_on_correct": 0.09031413612565445
+      },
+      "jpeg_compression_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 80,
+        "failure_rate": 0.09696969696969697,
+        "monitor_auroc_within_corrupted": 0.8202852348993288,
+        "entropy_auroc_within_corrupted": 0.4700167785234899,
+        "n_correct_frames": 745,
+        "fa_on_correct": 67,
+        "fa_rate_on_correct": 0.08993288590604027
+      },
+      "jpeg_compression_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 108,
+        "failure_rate": 0.13090909090909092,
+        "monitor_auroc_within_corrupted": 0.777002944366961,
+        "entropy_auroc_within_corrupted": 0.41590474714603026,
+        "n_correct_frames": 717,
+        "fa_on_correct": 67,
+        "fa_rate_on_correct": 0.09344490934449093
+      },
+      "jpeg_compression_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 165,
+        "failure_rate": 0.2,
+        "monitor_auroc_within_corrupted": 0.7809825528007346,
+        "entropy_auroc_within_corrupted": 0.4346280991735537,
+        "n_correct_frames": 660,
+        "fa_on_correct": 87,
+        "fa_rate_on_correct": 0.1318181818181818
+      },
+      "jpeg_compression_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 601,
+        "failure_rate": 0.7284848484848485,
+        "monitor_auroc_within_corrupted": 0.8282549916805324,
+        "entropy_auroc_within_corrupted": 0.45517144045638225,
+        "n_correct_frames": 224,
+        "fa_on_correct": 115,
+        "fa_rate_on_correct": 0.5133928571428571
+      },
+      "motion_blur_sev1": {
+        "severity": 1,
+        "n_total": 825,
+        "n_failed": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc_within_corrupted": 0.8004248562355163,
+        "entropy_auroc_within_corrupted": 0.5059866105913655,
+        "n_correct_frames": 764,
+        "fa_on_correct": 10,
+        "fa_rate_on_correct": 0.013089005235602094
+      },
+      "motion_blur_sev2": {
+        "severity": 2,
+        "n_total": 825,
+        "n_failed": 54,
+        "failure_rate": 0.06545454545454546,
+        "monitor_auroc_within_corrupted": 0.7913844454051977,
+        "entropy_auroc_within_corrupted": 0.4643560551472354,
+        "n_correct_frames": 771,
+        "fa_on_correct": 9,
+        "fa_rate_on_correct": 0.011673151750972763
+      },
+      "motion_blur_sev3": {
+        "severity": 3,
+        "n_total": 825,
+        "n_failed": 64,
+        "failure_rate": 0.07757575757575758,
+        "monitor_auroc_within_corrupted": 0.8000164257555848,
+        "entropy_auroc_within_corrupted": 0.4743142247043364,
+        "n_correct_frames": 761,
+        "fa_on_correct": 7,
+        "fa_rate_on_correct": 0.009198423127463863
+      },
+      "motion_blur_sev4": {
+        "severity": 4,
+        "n_total": 825,
+        "n_failed": 82,
+        "failure_rate": 0.0993939393939394,
+        "monitor_auroc_within_corrupted": 0.8054853428749631,
+        "entropy_auroc_within_corrupted": 0.51185044151922,
+        "n_correct_frames": 743,
+        "fa_on_correct": 8,
+        "fa_rate_on_correct": 0.010767160161507403
+      },
+      "motion_blur_sev5": {
+        "severity": 5,
+        "n_total": 825,
+        "n_failed": 114,
+        "failure_rate": 0.13818181818181818,
+        "monitor_auroc_within_corrupted": 0.8305697436277051,
+        "entropy_auroc_within_corrupted": 0.5271794112566931,
+        "n_correct_frames": 711,
+        "fa_on_correct": 7,
+        "fa_rate_on_correct": 0.009845288326300985
+      }
+    },
+    "per_severity": {
+      "sev_1": {
+        "severity": 1,
+        "monitor_auroc_mean": 0.8067985770368775,
+        "entropy_auroc_mean": 0.483764308188209,
+        "fa_rate_mean": 0.07988958143192004
+      },
+      "sev_2": {
+        "severity": 2,
+        "monitor_auroc_mean": 0.8216486760358959,
+        "entropy_auroc_mean": 0.5050541165599544,
+        "fa_rate_mean": 0.22322112291358578
+      },
+      "sev_3": {
+        "severity": 3,
+        "monitor_auroc_mean": 0.8268344511813543,
+        "entropy_auroc_mean": 0.48280727466011913,
+        "fa_rate_mean": 0.40356286073336434
+      },
+      "sev_4": {
+        "severity": 4,
+        "monitor_auroc_mean": 0.8607082619884532,
+        "entropy_auroc_mean": 0.36618767848265044,
+        "fa_rate_mean": 0.3580170972265
+      },
+      "sev_5": {
+        "severity": 5,
+        "monitor_auroc_mean": 0.8252153652553206,
+        "entropy_auroc_mean": 0.4782703729062656,
+        "fa_rate_mean": 0.08907115944299487
+      }
+    }
+  }
+}

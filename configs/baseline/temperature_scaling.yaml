@@ -1,0 +1,3 @@
+name: temperature_scaling
+fit_split: cal               # calibrate temperature on cal split
+risk_score: mean_pixel_entropy

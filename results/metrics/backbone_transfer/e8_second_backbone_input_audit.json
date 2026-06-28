@@ -1,0 +1,53 @@
+{
+  "experiment": "E8 Second Fine-Tuned Backbone Transfer",
+  "status": "blocked_prerequisites_missing",
+  "date": "2026-06-27",
+  "decision": "no_go",
+  "candidate_backbones": [
+    {
+      "candidate": "deeplabv3p_resnet50",
+      "config_exists": true,
+      "checkpoint": null,
+      "checkpoint_exists": false,
+      "prediction_counts": {
+        "data/processed/endovis2017/deeplabv3p_resnet50_predictions": 0,
+        "data/processed/endovis2017/predictions_deeplabv3p_resnet50": 0
+      },
+      "usable_prediction_dir": null,
+      "usable_for_e8": false
+    },
+    {
+      "candidate": "segformer_b0",
+      "config_exists": true,
+      "checkpoint": null,
+      "checkpoint_exists": false,
+      "prediction_counts": {
+        "data/processed/endovis2017/segformer_b0_predictions": 0,
+        "data/processed/endovis2017/predictions_segformer_b0": 0
+      },
+      "usable_prediction_dir": null,
+      "usable_for_e8": false
+    },
+    {
+      "candidate": "unetpp_resnet34",
+      "config_exists": true,
+      "checkpoint": null,
+      "checkpoint_exists": false,
+      "prediction_counts": {
+        "data/processed/endovis2017/unetpp_resnet34_predictions": 0,
+        "data/processed/endovis2017/predictions_unetpp_resnet34": 0
+      },
+      "usable_prediction_dir": null,
+      "usable_for_e8": false
+    }
+  ],
+  "sam2_existing_prob_maps": 2400,
+  "sam2_existing_result": "results/metrics/sam2_transfer.json",
+  "required_for_execution": [
+    "trained second fine-tuned surgical segmentation checkpoint",
+    "second-backbone clean test probability maps or logits",
+    "feature cache compatible with the monitor feature schema",
+    "failure labels computed from second-backbone masks against ground truth"
+  ],
+  "recommendation": "Do not run E8 as a publication experiment now. The available alternate configs do not point to trained checkpoints or cached prediction maps. SAM2 outputs exist, but SAM2 was already evaluated separately and is not the fine-tuned surgical-backbone transfer requested by E8."
+}

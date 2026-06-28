@@ -1,0 +1,12 @@
+name: all
+groups:
+  confidence: true
+  shape: true
+  temporal: true
+  quality: true
+  shift: true
+
+temporal_window: 5          # frames for rolling stats (within-video only)
+shift_n_neighbors: 10       # kNN k for shift feature
+shift_method: mahalanobis   # mahalanobis | knn
+encoder_layer: layer4       # which encoder layer to extract embeddings from

@@ -1,0 +1,56 @@
+{
+  "brightness": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.3534545454545454,
+    "monitor_auroc_mean": 0.7310007412481184,
+    "monitor_auprc_mean": 0.529095334009433,
+    "entropy_auroc_mean": 0.28029726258213,
+    "entropy_auprc_mean": 0.37467613024813906,
+    "monitor_wins_auroc": 5
+  },
+  "contrast": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.5076363636363637,
+    "monitor_auroc_mean": 0.8636141840279243,
+    "monitor_auprc_mean": 0.7136756532220169,
+    "entropy_auroc_mean": 0.8485988232223673,
+    "entropy_auprc_mean": 0.7296310403204093,
+    "monitor_wins_auroc": 3
+  },
+  "gaussian_blur": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.024484848484848488,
+    "monitor_auroc_mean": 0.7639076567026447,
+    "monitor_auprc_mean": 0.25229706601717294,
+    "entropy_auroc_mean": 0.5965359456447146,
+    "entropy_auprc_mean": 0.4600888393241604,
+    "monitor_wins_auroc": 5
+  },
+  "gaussian_noise": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.4252121212121212,
+    "monitor_auroc_mean": 0.7645292537014298,
+    "monitor_auprc_mean": 0.5389046235485788,
+    "entropy_auroc_mean": 0.36501390475291545,
+    "entropy_auprc_mean": 0.4880946793434993,
+    "monitor_wins_auroc": 4
+  },
+  "jpeg_compression": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.05454545454545454,
+    "monitor_auroc_mean": 0.7158218750329783,
+    "monitor_auprc_mean": 0.22471252905248879,
+    "entropy_auroc_mean": 0.4789507748208228,
+    "entropy_auprc_mean": 0.2162188877293266,
+    "monitor_wins_auroc": 5
+  },
+  "motion_blur": {
+    "n_conditions": 5,
+    "mean_failure_rate": 0.022303030303030304,
+    "monitor_auroc_mean": 0.769863684865945,
+    "monitor_auprc_mean": 0.2075946526805102,
+    "entropy_auroc_mean": 0.5894062033867715,
+    "entropy_auprc_mean": 0.3819767361809467,
+    "monitor_wins_auroc": 5
+  }
+}

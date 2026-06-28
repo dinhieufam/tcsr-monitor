@@ -1,0 +1,1825 @@
+{
+  "zero_shot": {
+    "description": "Train: clean OOF only | Test: all 6 types \u00d7 all 5 severities",
+    "train_types": "clean_only",
+    "train_severities": "none",
+    "by_condition": {
+      "brightness_sev1": {
+        "corruption_type": "brightness",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 73,
+        "failure_rate": 0.08848484848484849,
+        "monitor_auroc": 0.7199704896531623,
+        "entropy_auroc": 0.28005683474205767,
+        "monitor_auprc": 0.22409224500980668,
+        "entropy_auprc": 0.17656930577626,
+        "monitor_auroc_ci_lo": 0.6554183905416837,
+        "monitor_auroc_ci_hi": 0.7790043817565723
+      },
+      "brightness_sev2": {
+        "corruption_type": "brightness",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 176,
+        "failure_rate": 0.21333333333333335,
+        "monitor_auroc": 0.7535018910211515,
+        "entropy_auroc": 0.39053964140635944,
+        "monitor_auprc": 0.5382625437848323,
+        "entropy_auprc": 0.24986774686030264,
+        "monitor_auroc_ci_lo": 0.7080114219174352,
+        "monitor_auroc_ci_hi": 0.792497514419785
+      },
+      "brightness_sev3": {
+        "corruption_type": "brightness",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 335,
+        "failure_rate": 0.40606060606060607,
+        "monitor_auroc": 0.6915930551325007,
+        "entropy_auroc": 0.2601797136765154,
+        "monitor_auprc": 0.6195253075176179,
+        "entropy_auprc": 0.3015425978403832,
+        "monitor_auroc_ci_lo": 0.6519894425550516,
+        "monitor_auroc_ci_hi": 0.7268769057636826
+      },
+      "brightness_sev4": {
+        "corruption_type": "brightness",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 790,
+        "failure_rate": 0.9575757575757575,
+        "monitor_auroc": 0.7699457504520795,
+        "entropy_auroc": 0.3931645569620253,
+        "monitor_auprc": 0.9814639851235909,
+        "entropy_auprc": 0.9497264671108814,
+        "monitor_auroc_ci_lo": 0.6729043122264526,
+        "monitor_auroc_ci_hi": 0.859917208486684
+      },
+      "brightness_sev5": {
+        "corruption_type": "brightness",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev1": {
+        "corruption_type": "contrast",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc": 0.828981179248559,
+        "entropy_auroc": 0.7737863740537537,
+        "monitor_auprc": 0.36036229012813314,
+        "entropy_auprc": 0.4690563264066744,
+        "monitor_auroc_ci_lo": 0.7896368988744605,
+        "monitor_auroc_ci_hi": 0.8698928771199808
+      },
+      "contrast_sev2": {
+        "corruption_type": "contrast",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 421,
+        "failure_rate": 0.5103030303030303,
+        "monitor_auroc": 0.6665000823122692,
+        "entropy_auroc": 0.819118788363397,
+        "monitor_auprc": 0.6661618859974585,
+        "entropy_auprc": 0.8490195200377642,
+        "monitor_auroc_ci_lo": 0.627081731232294,
+        "monitor_auroc_ci_hi": 0.7031834569339113
+      },
+      "contrast_sev3": {
+        "corruption_type": "contrast",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 797,
+        "failure_rate": 0.9660606060606061,
+        "monitor_auroc": 0.7422925255422117,
+        "entropy_auroc": 0.9241351496683994,
+        "monitor_auprc": 0.9857952013287581,
+        "entropy_auprc": 0.99717658737031,
+        "monitor_auroc_ci_lo": 0.6163501802434457,
+        "monitor_auroc_ci_hi": 0.8465310114367238
+      },
+      "contrast_sev4": {
+        "corruption_type": "contrast",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0000000000000002,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev5": {
+        "corruption_type": "contrast",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "gaussian_blur_sev1": {
+        "corruption_type": "gaussian_blur",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 59,
+        "failure_rate": 0.07151515151515152,
+        "monitor_auroc": 0.7124728946320307,
+        "entropy_auroc": 0.4688232951276718,
+        "monitor_auprc": 0.12948904151951113,
+        "entropy_auprc": 0.21293066132729394,
+        "monitor_auroc_ci_lo": 0.6531144241161031,
+        "monitor_auroc_ci_hi": 0.7711728276209677
+      },
+      "gaussian_blur_sev2": {
+        "corruption_type": "gaussian_blur",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 74,
+        "failure_rate": 0.08969696969696969,
+        "monitor_auroc": 0.721452477777378,
+        "entropy_auroc": 0.45859574621225757,
+        "monitor_auprc": 0.1816222528239524,
+        "entropy_auprc": 0.20982664054602143,
+        "monitor_auroc_ci_lo": 0.6528797477571658,
+        "monitor_auroc_ci_hi": 0.783811447024397
+      },
+      "gaussian_blur_sev3": {
+        "corruption_type": "gaussian_blur",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 87,
+        "failure_rate": 0.10545454545454545,
+        "monitor_auroc": 0.7583948540634832,
+        "entropy_auroc": 0.4397564090583434,
+        "monitor_auprc": 0.2748192672875265,
+        "entropy_auprc": 0.20989000983207842,
+        "monitor_auroc_ci_lo": 0.6992380620758506,
+        "monitor_auroc_ci_hi": 0.8131981275303644
+      },
+      "gaussian_blur_sev4": {
+        "corruption_type": "gaussian_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 100,
+        "failure_rate": 0.12121212121212122,
+        "monitor_auroc": 0.7318965517241379,
+        "entropy_auroc": 0.45302068965517234,
+        "monitor_auprc": 0.29341838144887783,
+        "entropy_auprc": 0.2272120710335505,
+        "monitor_auroc_ci_lo": 0.677298911959535,
+        "monitor_auroc_ci_hi": 0.7900542739849935
+      },
+      "gaussian_blur_sev5": {
+        "corruption_type": "gaussian_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 110,
+        "failure_rate": 0.13333333333333333,
+        "monitor_auroc": 0.7258041958041958,
+        "entropy_auroc": 0.4524602670057215,
+        "monitor_auprc": 0.30250645699112566,
+        "entropy_auprc": 0.22139908726766094,
+        "monitor_auroc_ci_lo": 0.6711518122370519,
+        "monitor_auroc_ci_hi": 0.7786530061277435
+      },
+      "gaussian_noise_sev1": {
+        "corruption_type": "gaussian_noise",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc": 0.7133655114938537,
+        "entropy_auroc": 0.42860615320508366,
+        "monitor_auprc": 0.19555462748910352,
+        "entropy_auprc": 0.20387887677812896,
+        "monitor_auroc_ci_lo": 0.661688659830081,
+        "monitor_auroc_ci_hi": 0.7671605237429583
+      },
+      "gaussian_noise_sev2": {
+        "corruption_type": "gaussian_noise",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 121,
+        "failure_rate": 0.14666666666666667,
+        "monitor_auroc": 0.7288810105184073,
+        "entropy_auroc": 0.42769768970698724,
+        "monitor_auprc": 0.2713046387990292,
+        "entropy_auprc": 0.23381220726308394,
+        "monitor_auroc_ci_lo": 0.6828047730460927,
+        "monitor_auroc_ci_hi": 0.7714863157859676
+      },
+      "gaussian_noise_sev3": {
+        "corruption_type": "gaussian_noise",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 454,
+        "failure_rate": 0.5503030303030303,
+        "monitor_auroc": 0.7860616027642875,
+        "entropy_auroc": 0.38255340370709,
+        "monitor_auprc": 0.8179483265305622,
+        "entropy_auprc": 0.4972089402750593,
+        "monitor_auroc_ci_lo": 0.7548680212242505,
+        "monitor_auroc_ci_hi": 0.8135969198731963
+      },
+      "gaussian_noise_sev4": {
+        "corruption_type": "gaussian_noise",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 823,
+        "failure_rate": 0.9975757575757576,
+        "monitor_auroc": 0.9787363304981774,
+        "entropy_auroc": 0.03827460510328068,
+        "monitor_auprc": 0.9999475038614215,
+        "entropy_auprc": 0.9919663774092129,
+        "monitor_auroc_ci_lo": 0.9526123936816525,
+        "monitor_auroc_ci_hi": 0.9987864077669902
+      },
+      "gaussian_noise_sev5": {
+        "corruption_type": "gaussian_noise",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0000000000000002,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "jpeg_compression_sev1": {
+        "corruption_type": "jpeg_compression",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc": 0.6974937773581669,
+        "entropy_auroc": 0.445326581409321,
+        "monitor_auprc": 0.18534512497106181,
+        "entropy_auprc": 0.222856342372254,
+        "monitor_auroc_ci_lo": 0.6339724835249017,
+        "monitor_auroc_ci_hi": 0.7591787330819184
+      },
+      "jpeg_compression_sev2": {
+        "corruption_type": "jpeg_compression",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 80,
+        "failure_rate": 0.09696969696969697,
+        "monitor_auroc": 0.7503942953020135,
+        "entropy_auroc": 0.4700167785234899,
+        "monitor_auprc": 0.24086973063659156,
+        "entropy_auprc": 0.22499304240376994,
+        "monitor_auroc_ci_lo": 0.6970286507735357,
+        "monitor_auroc_ci_hi": 0.7983614407608085
+      },
+      "jpeg_compression_sev3": {
+        "corruption_type": "jpeg_compression",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 108,
+        "failure_rate": 0.13090909090909092,
+        "monitor_auroc": 0.7383904127279302,
+        "entropy_auroc": 0.41590474714603026,
+        "monitor_auprc": 0.3277380786407309,
+        "entropy_auprc": 0.20879649629176922,
+        "monitor_auroc_ci_lo": 0.6917641082813062,
+        "monitor_auroc_ci_hi": 0.7857149545444037
+      },
+      "jpeg_compression_sev4": {
+        "corruption_type": "jpeg_compression",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 165,
+        "failure_rate": 0.2,
+        "monitor_auroc": 0.7463085399449035,
+        "entropy_auroc": 0.4346280991735537,
+        "monitor_auprc": 0.4863459470546835,
+        "entropy_auprc": 0.24634574812811288,
+        "monitor_auroc_ci_lo": 0.7010035160122047,
+        "monitor_auroc_ci_hi": 0.7893540637365397
+      },
+      "jpeg_compression_sev5": {
+        "corruption_type": "jpeg_compression",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 601,
+        "failure_rate": 0.7284848484848485,
+        "monitor_auroc": 0.7998685227002615,
+        "entropy_auroc": 0.45517144045638225,
+        "monitor_auprc": 0.9135745914471375,
+        "entropy_auprc": 0.7550319069477449,
+        "monitor_auroc_ci_lo": 0.7673097819079991,
+        "monitor_auroc_ci_hi": 0.8310904552297558
+      },
+      "motion_blur_sev1": {
+        "corruption_type": "motion_blur",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc": 0.7472319972534547,
+        "entropy_auroc": 0.5059866105913655,
+        "monitor_auprc": 0.17566474158988954,
+        "entropy_auprc": 0.24289450045546201,
+        "monitor_auroc_ci_lo": 0.6806028717356675,
+        "monitor_auroc_ci_hi": 0.8015122376162224
+      },
+      "motion_blur_sev2": {
+        "corruption_type": "motion_blur",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 54,
+        "failure_rate": 0.06545454545454546,
+        "monitor_auroc": 0.7647955997502042,
+        "entropy_auroc": 0.4643560551472354,
+        "monitor_auprc": 0.15087305189584305,
+        "entropy_auprc": 0.2300810438846738,
+        "monitor_auroc_ci_lo": 0.7066220670388697,
+        "monitor_auroc_ci_hi": 0.8144701784895685
+      },
+      "motion_blur_sev3": {
+        "corruption_type": "motion_blur",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 64,
+        "failure_rate": 0.07757575757575758,
+        "monitor_auroc": 0.7834469448094612,
+        "entropy_auroc": 0.4743142247043364,
+        "monitor_auprc": 0.20472371392245534,
+        "entropy_auprc": 0.22836152995837256,
+        "monitor_auroc_ci_lo": 0.7325443259413877,
+        "monitor_auroc_ci_hi": 0.8354709053238576
+      },
+      "motion_blur_sev4": {
+        "corruption_type": "motion_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 82,
+        "failure_rate": 0.0993939393939394,
+        "monitor_auroc": 0.7672094015691167,
+        "entropy_auroc": 0.51185044151922,
+        "monitor_auprc": 0.25530584117373567,
+        "entropy_auprc": 0.24367733962206478,
+        "monitor_auroc_ci_lo": 0.7078678249052581,
+        "monitor_auroc_ci_hi": 0.8154323375929184
+      },
+      "motion_blur_sev5": {
+        "corruption_type": "motion_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 114,
+        "failure_rate": 0.13818181818181818,
+        "monitor_auroc": 0.7558664593974388,
+        "entropy_auroc": 0.5271794112566931,
+        "monitor_auprc": 0.35746601294173747,
+        "entropy_auprc": 0.24667931121271583,
+        "monitor_auroc_ci_lo": 0.7049532100453949,
+        "monitor_auroc_ci_hi": 0.8042872772323472
+      }
+    },
+    "by_severity": {
+      "sev_1": {
+        "severity": 1,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.7365859749398712,
+        "entropy_auroc_mean": 0.483764308188209,
+        "monitor_wins": 6,
+        "total_conditions": 6
+      },
+      "sev_2": {
+        "severity": 2,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.7309208927802372,
+        "entropy_auroc_mean": 0.5050541165599544,
+        "monitor_wins": 5,
+        "total_conditions": 6
+      },
+      "sev_3": {
+        "severity": 3,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.7500298991733124,
+        "entropy_auroc_mean": 0.48280727466011913,
+        "monitor_wins": 5,
+        "total_conditions": 6
+      },
+      "sev_4": {
+        "severity": 4,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.798819314837683,
+        "entropy_auroc_mean": 0.36618767848265044,
+        "monitor_wins": 5,
+        "total_conditions": 6
+      },
+      "sev_5": {
+        "severity": 5,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.7605130593006321,
+        "entropy_auroc_mean": 0.4782703729062656,
+        "monitor_wins": 3,
+        "total_conditions": 6
+      }
+    },
+    "overall": {
+      "monitor_auroc_mean": 0.7531098597481092,
+      "entropy_auroc_mean": 0.4652116810608363,
+      "monitor_wins_total": 24,
+      "total_conditions": 30
+    }
+  },
+  "loco": {
+    "description": "Train: clean OOF + 5 of 6 corruption types | Test: held-out 6th type",
+    "folds": {
+      "brightness": {
+        "by_condition": {
+          "brightness_sev1": {
+            "corruption_type": "brightness",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 73,
+            "failure_rate": 0.08848484848484849,
+            "monitor_auroc": 0.7074012678519382,
+            "entropy_auroc": 0.28005683474205767,
+            "monitor_auprc": 0.32584456969066744,
+            "entropy_auprc": 0.17656930577626,
+            "monitor_auroc_ci_lo": 0.638629068257311,
+            "monitor_auroc_ci_hi": 0.777424453974773
+          },
+          "brightness_sev2": {
+            "corruption_type": "brightness",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 176,
+            "failure_rate": 0.21333333333333335,
+            "monitor_auroc": 0.8425593570528085,
+            "entropy_auroc": 0.39053964140635944,
+            "monitor_auprc": 0.633076719886251,
+            "entropy_auprc": 0.24986774686030264,
+            "monitor_auroc_ci_lo": 0.8043500154060423,
+            "monitor_auroc_ci_hi": 0.8746912987829701
+          },
+          "brightness_sev3": {
+            "corruption_type": "brightness",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 335,
+            "failure_rate": 0.40606060606060607,
+            "monitor_auroc": 0.769841608285105,
+            "entropy_auroc": 0.2601797136765154,
+            "monitor_auprc": 0.6946474557151503,
+            "entropy_auprc": 0.3015425978403832,
+            "monitor_auroc_ci_lo": 0.7357115284283955,
+            "monitor_auroc_ci_hi": 0.7986871885694962
+          },
+          "brightness_sev4": {
+            "corruption_type": "brightness",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 790,
+            "failure_rate": 0.9575757575757575,
+            "monitor_auroc": 0.8822061482820978,
+            "entropy_auroc": 0.3931645569620253,
+            "monitor_auprc": 0.9934988176129476,
+            "entropy_auprc": 0.9497264671108814,
+            "monitor_auroc_ci_lo": 0.8350128791790928,
+            "monitor_auroc_ci_hi": 0.9242912021633791
+          },
+          "brightness_sev5": {
+            "corruption_type": "brightness",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 825,
+            "failure_rate": 1.0,
+            "monitor_auroc": NaN,
+            "entropy_auroc": NaN,
+            "monitor_auprc": 1.0,
+            "entropy_auprc": 1.0,
+            "monitor_auroc_ci_lo": NaN,
+            "monitor_auroc_ci_hi": NaN
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7074012678519382,
+            "entropy_auroc_mean": 0.28005683474205767,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8425593570528085,
+            "entropy_auroc_mean": 0.39053964140635944,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.769841608285105,
+            "entropy_auroc_mean": 0.2601797136765154,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8822061482820978,
+            "entropy_auroc_mean": 0.3931645569620253,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": NaN,
+            "entropy_auroc_mean": NaN,
+            "monitor_wins": 0,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.8005020953679873,
+          "entropy_auroc_mean": 0.33098518669673943,
+          "monitor_wins_total": 4,
+          "total_conditions": 5
+        }
+      },
+      "contrast": {
+        "by_condition": {
+          "contrast_sev1": {
+            "corruption_type": "contrast",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 77,
+            "failure_rate": 0.09333333333333334,
+            "monitor_auroc": 0.881988332523092,
+            "entropy_auroc": 0.7737863740537537,
+            "monitor_auprc": 0.5384379019542694,
+            "entropy_auprc": 0.4690563264066744,
+            "monitor_auroc_ci_lo": 0.8464891958417855,
+            "monitor_auroc_ci_hi": 0.9122624996395176
+          },
+          "contrast_sev2": {
+            "corruption_type": "contrast",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 421,
+            "failure_rate": 0.5103030303030303,
+            "monitor_auroc": 0.8934526469274005,
+            "entropy_auroc": 0.819118788363397,
+            "monitor_auprc": 0.8973727258437878,
+            "entropy_auprc": 0.8490195200377642,
+            "monitor_auroc_ci_lo": 0.8709659732677533,
+            "monitor_auroc_ci_hi": 0.914418512950022
+          },
+          "contrast_sev3": {
+            "corruption_type": "contrast",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 797,
+            "failure_rate": 0.9660606060606061,
+            "monitor_auroc": 0.961328195017028,
+            "entropy_auroc": 0.9241351496683994,
+            "monitor_auprc": 0.998552960130358,
+            "entropy_auprc": 0.99717658737031,
+            "monitor_auroc_ci_lo": 0.934142582239692,
+            "monitor_auroc_ci_hi": 0.9813739428681518
+          },
+          "contrast_sev4": {
+            "corruption_type": "contrast",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 825,
+            "failure_rate": 1.0,
+            "monitor_auroc": NaN,
+            "entropy_auroc": NaN,
+            "monitor_auprc": 1.0,
+            "entropy_auprc": 1.0,
+            "monitor_auroc_ci_lo": NaN,
+            "monitor_auroc_ci_hi": NaN
+          },
+          "contrast_sev5": {
+            "corruption_type": "contrast",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 825,
+            "failure_rate": 1.0,
+            "monitor_auroc": NaN,
+            "entropy_auroc": NaN,
+            "monitor_auprc": 1.0,
+            "entropy_auprc": 1.0,
+            "monitor_auroc_ci_lo": NaN,
+            "monitor_auroc_ci_hi": NaN
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.881988332523092,
+            "entropy_auroc_mean": 0.7737863740537537,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8934526469274005,
+            "entropy_auroc_mean": 0.819118788363397,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.961328195017028,
+            "entropy_auroc_mean": 0.9241351496683994,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": NaN,
+            "entropy_auroc_mean": NaN,
+            "monitor_wins": 0,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": NaN,
+            "entropy_auroc_mean": NaN,
+            "monitor_wins": 0,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.9122563914891734,
+          "entropy_auroc_mean": 0.83901343736185,
+          "monitor_wins_total": 3,
+          "total_conditions": 5
+        }
+      },
+      "gaussian_blur": {
+        "by_condition": {
+          "gaussian_blur_sev1": {
+            "corruption_type": "gaussian_blur",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 59,
+            "failure_rate": 0.07151515151515152,
+            "monitor_auroc": 0.7710315528609993,
+            "entropy_auroc": 0.4688232951276718,
+            "monitor_auprc": 0.30176278894836883,
+            "entropy_auprc": 0.21293066132729394,
+            "monitor_auroc_ci_lo": 0.7102343666182251,
+            "monitor_auroc_ci_hi": 0.8316155208398525
+          },
+          "gaussian_blur_sev2": {
+            "corruption_type": "gaussian_blur",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 74,
+            "failure_rate": 0.08969696969696969,
+            "monitor_auroc": 0.7802479576780509,
+            "entropy_auroc": 0.45859574621225757,
+            "monitor_auprc": 0.41711210059438714,
+            "entropy_auprc": 0.20982664054602143,
+            "monitor_auroc_ci_lo": 0.7196770600836889,
+            "monitor_auroc_ci_hi": 0.8353090694422801
+          },
+          "gaussian_blur_sev3": {
+            "corruption_type": "gaussian_blur",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 87,
+            "failure_rate": 0.10545454545454545,
+            "monitor_auroc": 0.8164813257327976,
+            "entropy_auroc": 0.4397564090583434,
+            "monitor_auprc": 0.4713743423193708,
+            "entropy_auprc": 0.20989000983207842,
+            "monitor_auroc_ci_lo": 0.7623032754680233,
+            "monitor_auroc_ci_hi": 0.8654143444624994
+          },
+          "gaussian_blur_sev4": {
+            "corruption_type": "gaussian_blur",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 100,
+            "failure_rate": 0.12121212121212122,
+            "monitor_auroc": 0.8300000000000001,
+            "entropy_auroc": 0.45302068965517234,
+            "monitor_auprc": 0.5156668441858672,
+            "entropy_auprc": 0.2272120710335505,
+            "monitor_auroc_ci_lo": 0.7814974959665291,
+            "monitor_auroc_ci_hi": 0.8730900596923369
+          },
+          "gaussian_blur_sev5": {
+            "corruption_type": "gaussian_blur",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 110,
+            "failure_rate": 0.13333333333333333,
+            "monitor_auroc": 0.830311506675143,
+            "entropy_auroc": 0.4524602670057215,
+            "monitor_auprc": 0.5375920078306597,
+            "entropy_auprc": 0.22139908726766094,
+            "monitor_auroc_ci_lo": 0.7885963595883573,
+            "monitor_auroc_ci_hi": 0.8698193378300451
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7710315528609993,
+            "entropy_auroc_mean": 0.4688232951276718,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7802479576780509,
+            "entropy_auroc_mean": 0.45859574621225757,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8164813257327976,
+            "entropy_auroc_mean": 0.4397564090583434,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8300000000000001,
+            "entropy_auroc_mean": 0.45302068965517234,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.830311506675143,
+            "entropy_auroc_mean": 0.4524602670057215,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.8056144685893981,
+          "entropy_auroc_mean": 0.4545312814118333,
+          "monitor_wins_total": 5,
+          "total_conditions": 5
+        }
+      },
+      "gaussian_noise": {
+        "by_condition": {
+          "gaussian_noise_sev1": {
+            "corruption_type": "gaussian_noise",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 77,
+            "failure_rate": 0.09333333333333334,
+            "monitor_auroc": 0.7784134314882977,
+            "entropy_auroc": 0.42860615320508366,
+            "monitor_auprc": 0.31173045551240663,
+            "entropy_auprc": 0.20387887677812896,
+            "monitor_auroc_ci_lo": 0.7288633057357636,
+            "monitor_auroc_ci_hi": 0.8279006561104127
+          },
+          "gaussian_noise_sev2": {
+            "corruption_type": "gaussian_noise",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 121,
+            "failure_rate": 0.14666666666666667,
+            "monitor_auroc": 0.7735490232907589,
+            "entropy_auroc": 0.42769768970698724,
+            "monitor_auprc": 0.40380141532522473,
+            "entropy_auprc": 0.23381220726308394,
+            "monitor_auroc_ci_lo": 0.7368265542046606,
+            "monitor_auroc_ci_hi": 0.8132165034145435
+          },
+          "gaussian_noise_sev3": {
+            "corruption_type": "gaussian_noise",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 454,
+            "failure_rate": 0.5503030303030303,
+            "monitor_auroc": 0.7972499614092167,
+            "entropy_auroc": 0.38255340370709,
+            "monitor_auprc": 0.8520132342026301,
+            "entropy_auprc": 0.4972089402750593,
+            "monitor_auroc_ci_lo": 0.7664037319938798,
+            "monitor_auroc_ci_hi": 0.8233640393957541
+          },
+          "gaussian_noise_sev4": {
+            "corruption_type": "gaussian_noise",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 823,
+            "failure_rate": 0.9975757575757576,
+            "monitor_auroc": 0.8948967193195625,
+            "entropy_auroc": 0.03827460510328068,
+            "monitor_auprc": 0.9997166537055626,
+            "entropy_auprc": 0.9919663774092129,
+            "monitor_auroc_ci_lo": 0.7799859498659287,
+            "monitor_auroc_ci_hi": 0.9963592233009708
+          },
+          "gaussian_noise_sev5": {
+            "corruption_type": "gaussian_noise",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 825,
+            "failure_rate": 1.0,
+            "monitor_auroc": NaN,
+            "entropy_auroc": NaN,
+            "monitor_auprc": 1.0,
+            "entropy_auprc": 1.0,
+            "monitor_auroc_ci_lo": NaN,
+            "monitor_auroc_ci_hi": NaN
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7784134314882977,
+            "entropy_auroc_mean": 0.42860615320508366,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7735490232907589,
+            "entropy_auroc_mean": 0.42769768970698724,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7972499614092167,
+            "entropy_auroc_mean": 0.38255340370709,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8948967193195625,
+            "entropy_auroc_mean": 0.03827460510328068,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": NaN,
+            "entropy_auroc_mean": NaN,
+            "monitor_wins": 0,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.811027283876959,
+          "entropy_auroc_mean": 0.3192829629306104,
+          "monitor_wins_total": 4,
+          "total_conditions": 5
+        }
+      },
+      "jpeg_compression": {
+        "by_condition": {
+          "jpeg_compression_sev1": {
+            "corruption_type": "jpeg_compression",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 61,
+            "failure_rate": 0.07393939393939394,
+            "monitor_auroc": 0.6617672302806625,
+            "entropy_auroc": 0.445326581409321,
+            "monitor_auprc": 0.29617672394137845,
+            "entropy_auprc": 0.222856342372254,
+            "monitor_auroc_ci_lo": 0.5727213984295901,
+            "monitor_auroc_ci_hi": 0.7500167118618767
+          },
+          "jpeg_compression_sev2": {
+            "corruption_type": "jpeg_compression",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 80,
+            "failure_rate": 0.09696969696969697,
+            "monitor_auroc": 0.7545973154362416,
+            "entropy_auroc": 0.4700167785234899,
+            "monitor_auprc": 0.44087898018467225,
+            "entropy_auprc": 0.22499304240376994,
+            "monitor_auroc_ci_lo": 0.6854119761456038,
+            "monitor_auroc_ci_hi": 0.819501811084132
+          },
+          "jpeg_compression_sev3": {
+            "corruption_type": "jpeg_compression",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 108,
+            "failure_rate": 0.13090909090909092,
+            "monitor_auroc": 0.7852355493568883,
+            "entropy_auroc": 0.41590474714603026,
+            "monitor_auprc": 0.48972838761421356,
+            "entropy_auprc": 0.20879649629176922,
+            "monitor_auroc_ci_lo": 0.7349388988425074,
+            "monitor_auroc_ci_hi": 0.8380438093234905
+          },
+          "jpeg_compression_sev4": {
+            "corruption_type": "jpeg_compression",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 165,
+            "failure_rate": 0.2,
+            "monitor_auroc": 0.8017906336088154,
+            "entropy_auroc": 0.4346280991735537,
+            "monitor_auprc": 0.5862870213925454,
+            "entropy_auprc": 0.24634574812811288,
+            "monitor_auroc_ci_lo": 0.7541234298651295,
+            "monitor_auroc_ci_hi": 0.844003459706351
+          },
+          "jpeg_compression_sev5": {
+            "corruption_type": "jpeg_compression",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 601,
+            "failure_rate": 0.7284848484848485,
+            "monitor_auroc": 0.8630333372949845,
+            "entropy_auroc": 0.45517144045638225,
+            "monitor_auprc": 0.9450452476149502,
+            "entropy_auprc": 0.7550319069477449,
+            "monitor_auroc_ci_lo": 0.8394161319882335,
+            "monitor_auroc_ci_hi": 0.8855500891772712
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.6617672302806625,
+            "entropy_auroc_mean": 0.445326581409321,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7545973154362416,
+            "entropy_auroc_mean": 0.4700167785234899,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7852355493568883,
+            "entropy_auroc_mean": 0.41590474714603026,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8017906336088154,
+            "entropy_auroc_mean": 0.4346280991735537,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8630333372949845,
+            "entropy_auroc_mean": 0.45517144045638225,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.7732848131955186,
+          "entropy_auroc_mean": 0.44420952934175534,
+          "monitor_wins_total": 5,
+          "total_conditions": 5
+        }
+      },
+      "motion_blur": {
+        "by_condition": {
+          "motion_blur_sev1": {
+            "corruption_type": "motion_blur",
+            "severity": 1,
+            "n_frames": 825,
+            "n_failures": 61,
+            "failure_rate": 0.07393939393939394,
+            "monitor_auroc": 0.7612114839927904,
+            "entropy_auroc": 0.5059866105913655,
+            "monitor_auprc": 0.36441789198198243,
+            "entropy_auprc": 0.24289450045546201,
+            "monitor_auroc_ci_lo": 0.6784781306232317,
+            "monitor_auroc_ci_hi": 0.8339977878225747
+          },
+          "motion_blur_sev2": {
+            "corruption_type": "motion_blur",
+            "severity": 2,
+            "n_frames": 825,
+            "n_failures": 54,
+            "failure_rate": 0.06545454545454546,
+            "monitor_auroc": 0.7516332804919056,
+            "entropy_auroc": 0.4643560551472354,
+            "monitor_auprc": 0.3319733511737289,
+            "entropy_auprc": 0.2300810438846738,
+            "monitor_auroc_ci_lo": 0.6682710163813746,
+            "monitor_auroc_ci_hi": 0.8258381166238136
+          },
+          "motion_blur_sev3": {
+            "corruption_type": "motion_blur",
+            "severity": 3,
+            "n_frames": 825,
+            "n_failures": 64,
+            "failure_rate": 0.07757575757575758,
+            "monitor_auroc": 0.7691154730617609,
+            "entropy_auroc": 0.4743142247043364,
+            "monitor_auprc": 0.41881465064551493,
+            "entropy_auprc": 0.22836152995837256,
+            "monitor_auroc_ci_lo": 0.6918732869706075,
+            "monitor_auroc_ci_hi": 0.8331679974683479
+          },
+          "motion_blur_sev4": {
+            "corruption_type": "motion_blur",
+            "severity": 4,
+            "n_frames": 825,
+            "n_failures": 82,
+            "failure_rate": 0.0993939393939394,
+            "monitor_auroc": 0.782408167284903,
+            "entropy_auroc": 0.51185044151922,
+            "monitor_auprc": 0.44397985988100586,
+            "entropy_auprc": 0.24367733962206478,
+            "monitor_auroc_ci_lo": 0.7183227499034756,
+            "monitor_auroc_ci_hi": 0.8392050592391533
+          },
+          "motion_blur_sev5": {
+            "corruption_type": "motion_blur",
+            "severity": 5,
+            "n_frames": 825,
+            "n_failures": 114,
+            "failure_rate": 0.13818181818181818,
+            "monitor_auroc": 0.8324450366422385,
+            "entropy_auroc": 0.5271794112566931,
+            "monitor_auprc": 0.5406726615238908,
+            "entropy_auprc": 0.24667931121271583,
+            "monitor_auroc_ci_lo": 0.7920413827319349,
+            "monitor_auroc_ci_hi": 0.869017365598172
+          }
+        },
+        "by_severity": {
+          "sev_1": {
+            "severity": 1,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7612114839927904,
+            "entropy_auroc_mean": 0.5059866105913655,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_2": {
+            "severity": 2,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7516332804919056,
+            "entropy_auroc_mean": 0.4643560551472354,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_3": {
+            "severity": 3,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.7691154730617609,
+            "entropy_auroc_mean": 0.4743142247043364,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_4": {
+            "severity": 4,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.782408167284903,
+            "entropy_auroc_mean": 0.51185044151922,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          },
+          "sev_5": {
+            "severity": 5,
+            "n_conditions": 1,
+            "monitor_auroc_mean": 0.8324450366422385,
+            "entropy_auroc_mean": 0.5271794112566931,
+            "monitor_wins": 1,
+            "total_conditions": 1
+          }
+        },
+        "overall": {
+          "monitor_auroc_mean": 0.7793626882947197,
+          "entropy_auroc_mean": 0.4967373486437701,
+          "monitor_wins_total": 5,
+          "total_conditions": 5
+        }
+      }
+    },
+    "macro_average": {
+      "monitor_auroc_macro": 0.8136746234689594,
+      "entropy_auroc_macro": 0.4807932910644264,
+      "monitor_wins_total": 26,
+      "total_conditions": 30
+    }
+  },
+  "severity_extrap": {
+    "description": "Train: clean OOF + sev 1-3 | Test: sev 4-5",
+    "train_severities": [
+      1,
+      2,
+      3
+    ],
+    "test_severities": [
+      4,
+      5
+    ],
+    "by_condition": {
+      "brightness_sev4": {
+        "corruption_type": "brightness",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 790,
+        "failure_rate": 0.9575757575757575,
+        "monitor_auroc": 0.8449186256781194,
+        "entropy_auroc": 0.3931645569620253,
+        "monitor_auprc": 0.9918939691423885,
+        "entropy_auprc": 0.9497264671108814,
+        "monitor_auroc_ci_lo": 0.7945554953107404,
+        "monitor_auroc_ci_hi": 0.8912664211756361
+      },
+      "brightness_sev5": {
+        "corruption_type": "brightness",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0000000000000002,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev4": {
+        "corruption_type": "contrast",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev5": {
+        "corruption_type": "contrast",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "gaussian_blur_sev4": {
+        "corruption_type": "gaussian_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 100,
+        "failure_rate": 0.12121212121212122,
+        "monitor_auroc": 0.832,
+        "entropy_auroc": 0.45302068965517234,
+        "monitor_auprc": 0.5282215249869191,
+        "entropy_auprc": 0.2272120710335505,
+        "monitor_auroc_ci_lo": 0.7750662146548463,
+        "monitor_auroc_ci_hi": 0.8802085263504523
+      },
+      "gaussian_blur_sev5": {
+        "corruption_type": "gaussian_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 110,
+        "failure_rate": 0.13333333333333333,
+        "monitor_auroc": 0.829942784488239,
+        "entropy_auroc": 0.4524602670057215,
+        "monitor_auprc": 0.5314165352284957,
+        "entropy_auprc": 0.22139908726766094,
+        "monitor_auroc_ci_lo": 0.7798187493631198,
+        "monitor_auroc_ci_hi": 0.8753851310053136
+      },
+      "gaussian_noise_sev4": {
+        "corruption_type": "gaussian_noise",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 823,
+        "failure_rate": 0.9975757575757576,
+        "monitor_auroc": 0.8092345078979344,
+        "entropy_auroc": 0.03827460510328068,
+        "monitor_auprc": 0.9994921060938359,
+        "entropy_auprc": 0.9919663774092129,
+        "monitor_auroc_ci_lo": 0.7807150066613241,
+        "monitor_auroc_ci_hi": 0.8336015008434687
+      },
+      "gaussian_noise_sev5": {
+        "corruption_type": "gaussian_noise",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "jpeg_compression_sev4": {
+        "corruption_type": "jpeg_compression",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 165,
+        "failure_rate": 0.2,
+        "monitor_auroc": 0.8311707988980717,
+        "entropy_auroc": 0.4346280991735537,
+        "monitor_auprc": 0.600341827219543,
+        "entropy_auprc": 0.24634574812811288,
+        "monitor_auroc_ci_lo": 0.7914722797066828,
+        "monitor_auroc_ci_hi": 0.8678166762747633
+      },
+      "jpeg_compression_sev5": {
+        "corruption_type": "jpeg_compression",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 601,
+        "failure_rate": 0.7284848484848485,
+        "monitor_auroc": 0.8592895768956501,
+        "entropy_auroc": 0.45517144045638225,
+        "monitor_auprc": 0.9449271042980769,
+        "entropy_auprc": 0.7550319069477449,
+        "monitor_auroc_ci_lo": 0.8362021933679178,
+        "monitor_auroc_ci_hi": 0.8828886820509978
+      },
+      "motion_blur_sev4": {
+        "corruption_type": "motion_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 82,
+        "failure_rate": 0.0993939393939394,
+        "monitor_auroc": 0.7974017660768802,
+        "entropy_auroc": 0.51185044151922,
+        "monitor_auprc": 0.4683777836379588,
+        "entropy_auprc": 0.24367733962206478,
+        "monitor_auroc_ci_lo": 0.7301186932279268,
+        "monitor_auroc_ci_hi": 0.862964737381443
+      },
+      "motion_blur_sev5": {
+        "corruption_type": "motion_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 114,
+        "failure_rate": 0.13818181818181818,
+        "monitor_auroc": 0.8401991265082537,
+        "entropy_auroc": 0.5271794112566931,
+        "monitor_auprc": 0.5661182710071728,
+        "entropy_auprc": 0.24667931121271583,
+        "monitor_auroc_ci_lo": 0.7951639609709773,
+        "monitor_auroc_ci_hi": 0.8836375218033586
+      }
+    },
+    "by_severity": {
+      "sev_4": {
+        "severity": 4,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8229451397102011,
+        "entropy_auroc_mean": 0.36618767848265044,
+        "monitor_wins": 5,
+        "total_conditions": 6
+      },
+      "sev_5": {
+        "severity": 5,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.843143829297381,
+        "entropy_auroc_mean": 0.4782703729062656,
+        "monitor_wins": 3,
+        "total_conditions": 6
+      }
+    },
+    "overall": {
+      "monitor_auroc_mean": 0.8305196483053935,
+      "entropy_auroc_mean": 0.40821868889150614,
+      "monitor_wins_total": 8,
+      "total_conditions": 12
+    }
+  },
+  "in_distribution": {
+    "description": "Train: clean OOF + all 6 types \u00d7 all 5 sev | Test: all (upper bound)",
+    "train_types": "all_6",
+    "train_severities": "all_5",
+    "by_condition": {
+      "brightness_sev1": {
+        "corruption_type": "brightness",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 73,
+        "failure_rate": 0.08848484848484849,
+        "monitor_auroc": 0.7685441562226756,
+        "entropy_auroc": 0.28005683474205767,
+        "monitor_auprc": 0.36739634929266174,
+        "entropy_auprc": 0.17656930577626,
+        "monitor_auroc_ci_lo": 0.7120409139055204,
+        "monitor_auroc_ci_hi": 0.8233324737163638
+      },
+      "brightness_sev2": {
+        "corruption_type": "brightness",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 176,
+        "failure_rate": 0.21333333333333335,
+        "monitor_auroc": 0.8440958117383388,
+        "entropy_auroc": 0.39053964140635944,
+        "monitor_auprc": 0.6658782627778289,
+        "entropy_auprc": 0.24986774686030264,
+        "monitor_auroc_ci_lo": 0.8122637040333638,
+        "monitor_auroc_ci_hi": 0.8749059502318502
+      },
+      "brightness_sev3": {
+        "corruption_type": "brightness",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 335,
+        "failure_rate": 0.40606060606060607,
+        "monitor_auroc": 0.8022601279317698,
+        "entropy_auroc": 0.2601797136765154,
+        "monitor_auprc": 0.7592523228452333,
+        "entropy_auprc": 0.3015425978403832,
+        "monitor_auroc_ci_lo": 0.7706970516443091,
+        "monitor_auroc_ci_hi": 0.8333238445703605
+      },
+      "brightness_sev4": {
+        "corruption_type": "brightness",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 790,
+        "failure_rate": 0.9575757575757575,
+        "monitor_auroc": 0.9350452079566003,
+        "entropy_auroc": 0.3931645569620253,
+        "monitor_auprc": 0.996897267211708,
+        "entropy_auprc": 0.9497264671108814,
+        "monitor_auroc_ci_lo": 0.9054752762506912,
+        "monitor_auroc_ci_hi": 0.9635504201680671
+      },
+      "brightness_sev5": {
+        "corruption_type": "brightness",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev1": {
+        "corruption_type": "contrast",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc": 0.876727550524342,
+        "entropy_auroc": 0.7737863740537537,
+        "monitor_auprc": 0.5221379697423033,
+        "entropy_auprc": 0.4690563264066744,
+        "monitor_auroc_ci_lo": 0.8413306367336392,
+        "monitor_auroc_ci_hi": 0.9073744753925927
+      },
+      "contrast_sev2": {
+        "corruption_type": "contrast",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 421,
+        "failure_rate": 0.5103030303030303,
+        "monitor_auroc": 0.8907774981773712,
+        "entropy_auroc": 0.819118788363397,
+        "monitor_auprc": 0.8953348728955183,
+        "entropy_auprc": 0.8490195200377642,
+        "monitor_auroc_ci_lo": 0.8693101493450687,
+        "monitor_auroc_ci_hi": 0.9119602567915585
+      },
+      "contrast_sev3": {
+        "corruption_type": "contrast",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 797,
+        "failure_rate": 0.9660606060606061,
+        "monitor_auroc": 0.9391468005018819,
+        "entropy_auroc": 0.9241351496683994,
+        "monitor_auprc": 0.9976095725342071,
+        "entropy_auprc": 0.99717658737031,
+        "monitor_auroc_ci_lo": 0.8991844079683632,
+        "monitor_auroc_ci_hi": 0.9709542055774848
+      },
+      "contrast_sev4": {
+        "corruption_type": "contrast",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "contrast_sev5": {
+        "corruption_type": "contrast",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "gaussian_blur_sev1": {
+        "corruption_type": "gaussian_blur",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 59,
+        "failure_rate": 0.07151515151515152,
+        "monitor_auroc": 0.7731446652210471,
+        "entropy_auroc": 0.4688232951276718,
+        "monitor_auprc": 0.30868173802153526,
+        "entropy_auprc": 0.21293066132729394,
+        "monitor_auroc_ci_lo": 0.711589722363729,
+        "monitor_auroc_ci_hi": 0.8300817546969274
+      },
+      "gaussian_blur_sev2": {
+        "corruption_type": "gaussian_blur",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 74,
+        "failure_rate": 0.08969696969696969,
+        "monitor_auroc": 0.7803109367689927,
+        "entropy_auroc": 0.45859574621225757,
+        "monitor_auprc": 0.4059117869367646,
+        "entropy_auprc": 0.20982664054602143,
+        "monitor_auroc_ci_lo": 0.7178658052973292,
+        "monitor_auroc_ci_hi": 0.8355573313189888
+      },
+      "gaussian_blur_sev3": {
+        "corruption_type": "gaussian_blur",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 87,
+        "failure_rate": 0.10545454545454545,
+        "monitor_auroc": 0.814861539419992,
+        "entropy_auroc": 0.4397564090583434,
+        "monitor_auprc": 0.44419129661788526,
+        "entropy_auprc": 0.20989000983207842,
+        "monitor_auroc_ci_lo": 0.7608210919610222,
+        "monitor_auroc_ci_hi": 0.8612380316411934
+      },
+      "gaussian_blur_sev4": {
+        "corruption_type": "gaussian_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 100,
+        "failure_rate": 0.12121212121212122,
+        "monitor_auroc": 0.8209103448275862,
+        "entropy_auroc": 0.45302068965517234,
+        "monitor_auprc": 0.5122117562313208,
+        "entropy_auprc": 0.2272120710335505,
+        "monitor_auroc_ci_lo": 0.7745376204804041,
+        "monitor_auroc_ci_hi": 0.861839536564123
+      },
+      "gaussian_blur_sev5": {
+        "corruption_type": "gaussian_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 110,
+        "failure_rate": 0.13333333333333333,
+        "monitor_auroc": 0.8168213604577241,
+        "entropy_auroc": 0.4524602670057215,
+        "monitor_auprc": 0.5040525431544923,
+        "entropy_auprc": 0.22139908726766094,
+        "monitor_auroc_ci_lo": 0.7734036854997647,
+        "monitor_auroc_ci_hi": 0.855903283404685
+      },
+      "gaussian_noise_sev1": {
+        "corruption_type": "gaussian_noise",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 77,
+        "failure_rate": 0.09333333333333334,
+        "monitor_auroc": 0.8019133273143969,
+        "entropy_auroc": 0.42860615320508366,
+        "monitor_auprc": 0.37367102188175344,
+        "entropy_auprc": 0.20387887677812896,
+        "monitor_auroc_ci_lo": 0.7574506462298952,
+        "monitor_auroc_ci_hi": 0.8459658297971674
+      },
+      "gaussian_noise_sev2": {
+        "corruption_type": "gaussian_noise",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 121,
+        "failure_rate": 0.14666666666666667,
+        "monitor_auroc": 0.8030381292261457,
+        "entropy_auroc": 0.42769768970698724,
+        "monitor_auprc": 0.4696547410723077,
+        "entropy_auprc": 0.23381220726308394,
+        "monitor_auroc_ci_lo": 0.7645470589277802,
+        "monitor_auroc_ci_hi": 0.8407825308023956
+      },
+      "gaussian_noise_sev3": {
+        "corruption_type": "gaussian_noise",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 454,
+        "failure_rate": 0.5503030303030303,
+        "monitor_auroc": 0.8277188691119369,
+        "entropy_auroc": 0.38255340370709,
+        "monitor_auprc": 0.8619936838894675,
+        "entropy_auprc": 0.4972089402750593,
+        "monitor_auroc_ci_lo": 0.8001919134867661,
+        "monitor_auroc_ci_hi": 0.8536755076703463
+      },
+      "gaussian_noise_sev4": {
+        "corruption_type": "gaussian_noise",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 823,
+        "failure_rate": 0.9975757575757576,
+        "monitor_auroc": 0.9611178614823815,
+        "entropy_auroc": 0.03827460510328068,
+        "monitor_auprc": 0.9999025271559561,
+        "entropy_auprc": 0.9919663774092129,
+        "monitor_auroc_ci_lo": 0.9173754556500607,
+        "monitor_auroc_ci_hi": 0.9963562372447475
+      },
+      "gaussian_noise_sev5": {
+        "corruption_type": "gaussian_noise",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 825,
+        "failure_rate": 1.0,
+        "monitor_auroc": NaN,
+        "entropy_auroc": NaN,
+        "monitor_auprc": 1.0,
+        "entropy_auprc": 1.0,
+        "monitor_auroc_ci_lo": NaN,
+        "monitor_auroc_ci_hi": NaN
+      },
+      "jpeg_compression_sev1": {
+        "corruption_type": "jpeg_compression",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc": 0.8200369067032873,
+        "entropy_auroc": 0.445326581409321,
+        "monitor_auprc": 0.3766422403223982,
+        "entropy_auprc": 0.222856342372254,
+        "monitor_auroc_ci_lo": 0.7735991334416532,
+        "monitor_auroc_ci_hi": 0.8653542642570012
+      },
+      "jpeg_compression_sev2": {
+        "corruption_type": "jpeg_compression",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 80,
+        "failure_rate": 0.09696969696969697,
+        "monitor_auroc": 0.8202852348993288,
+        "entropy_auroc": 0.4700167785234899,
+        "monitor_auprc": 0.4087928593519362,
+        "entropy_auprc": 0.22499304240376994,
+        "monitor_auroc_ci_lo": 0.7763040528707909,
+        "monitor_auroc_ci_hi": 0.8654256566139442
+      },
+      "jpeg_compression_sev3": {
+        "corruption_type": "jpeg_compression",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 108,
+        "failure_rate": 0.13090909090909092,
+        "monitor_auroc": 0.777002944366961,
+        "entropy_auroc": 0.41590474714603026,
+        "monitor_auprc": 0.4308742855959325,
+        "entropy_auprc": 0.20879649629176922,
+        "monitor_auroc_ci_lo": 0.7257218479310935,
+        "monitor_auroc_ci_hi": 0.8217809477472339
+      },
+      "jpeg_compression_sev4": {
+        "corruption_type": "jpeg_compression",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 165,
+        "failure_rate": 0.2,
+        "monitor_auroc": 0.7809825528007346,
+        "entropy_auroc": 0.4346280991735537,
+        "monitor_auprc": 0.5521030487416398,
+        "entropy_auprc": 0.24634574812811288,
+        "monitor_auroc_ci_lo": 0.7382446179648536,
+        "monitor_auroc_ci_hi": 0.82030089577973
+      },
+      "jpeg_compression_sev5": {
+        "corruption_type": "jpeg_compression",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 601,
+        "failure_rate": 0.7284848484848485,
+        "monitor_auroc": 0.8282549916805324,
+        "entropy_auroc": 0.45517144045638225,
+        "monitor_auprc": 0.9322577565746994,
+        "entropy_auprc": 0.7550319069477449,
+        "monitor_auroc_ci_lo": 0.8005514095818049,
+        "monitor_auroc_ci_hi": 0.855083985577773
+      },
+      "motion_blur_sev1": {
+        "corruption_type": "motion_blur",
+        "severity": 1,
+        "n_frames": 825,
+        "n_failures": 61,
+        "failure_rate": 0.07393939393939394,
+        "monitor_auroc": 0.8004248562355163,
+        "entropy_auroc": 0.5059866105913655,
+        "monitor_auprc": 0.37112493106145134,
+        "entropy_auprc": 0.24289450045546201,
+        "monitor_auroc_ci_lo": 0.7410206761959552,
+        "monitor_auroc_ci_hi": 0.8570500930882957
+      },
+      "motion_blur_sev2": {
+        "corruption_type": "motion_blur",
+        "severity": 2,
+        "n_frames": 825,
+        "n_failures": 54,
+        "failure_rate": 0.06545454545454546,
+        "monitor_auroc": 0.7913844454051977,
+        "entropy_auroc": 0.4643560551472354,
+        "monitor_auprc": 0.31569712318977106,
+        "entropy_auprc": 0.2300810438846738,
+        "monitor_auroc_ci_lo": 0.7280731314177823,
+        "monitor_auroc_ci_hi": 0.8461076134492173
+      },
+      "motion_blur_sev3": {
+        "corruption_type": "motion_blur",
+        "severity": 3,
+        "n_frames": 825,
+        "n_failures": 64,
+        "failure_rate": 0.07757575757575758,
+        "monitor_auroc": 0.8000164257555848,
+        "entropy_auroc": 0.4743142247043364,
+        "monitor_auprc": 0.3830668502356286,
+        "entropy_auprc": 0.22836152995837256,
+        "monitor_auroc_ci_lo": 0.736625285851978,
+        "monitor_auroc_ci_hi": 0.8495330676387096
+      },
+      "motion_blur_sev4": {
+        "corruption_type": "motion_blur",
+        "severity": 4,
+        "n_frames": 825,
+        "n_failures": 82,
+        "failure_rate": 0.0993939393939394,
+        "monitor_auroc": 0.8054853428749631,
+        "entropy_auroc": 0.51185044151922,
+        "monitor_auprc": 0.4217964233492689,
+        "entropy_auprc": 0.24367733962206478,
+        "monitor_auroc_ci_lo": 0.7546739649543794,
+        "monitor_auroc_ci_hi": 0.8552068361201359
+      },
+      "motion_blur_sev5": {
+        "corruption_type": "motion_blur",
+        "severity": 5,
+        "n_frames": 825,
+        "n_failures": 114,
+        "failure_rate": 0.13818181818181818,
+        "monitor_auroc": 0.8305697436277051,
+        "entropy_auroc": 0.5271794112566931,
+        "monitor_auprc": 0.5407255319330995,
+        "entropy_auprc": 0.24667931121271583,
+        "monitor_auroc_ci_lo": 0.7936677201167623,
+        "monitor_auroc_ci_hi": 0.8675253590821256
+      }
+    },
+    "by_severity": {
+      "sev_1": {
+        "severity": 1,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8067985770368775,
+        "entropy_auroc_mean": 0.483764308188209,
+        "monitor_wins": 6,
+        "total_conditions": 6
+      },
+      "sev_2": {
+        "severity": 2,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8216486760358959,
+        "entropy_auroc_mean": 0.5050541165599544,
+        "monitor_wins": 6,
+        "total_conditions": 6
+      },
+      "sev_3": {
+        "severity": 3,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8268344511813543,
+        "entropy_auroc_mean": 0.48280727466011913,
+        "monitor_wins": 6,
+        "total_conditions": 6
+      },
+      "sev_4": {
+        "severity": 4,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8607082619884532,
+        "entropy_auroc_mean": 0.36618767848265044,
+        "monitor_wins": 5,
+        "total_conditions": 6
+      },
+      "sev_5": {
+        "severity": 5,
+        "n_conditions": 6,
+        "monitor_auroc_mean": 0.8252153652553206,
+        "entropy_auroc_mean": 0.4782703729062656,
+        "monitor_wins": 3,
+        "total_conditions": 6
+      }
+    },
+    "overall": {
+      "monitor_auroc_mean": 0.8273414473551151,
+      "entropy_auroc_mean": 0.4652116810608363,
+      "monitor_wins_total": 26,
+      "total_conditions": 30
+    }
+  },
+  "summary_table": {
+    "zero_shot": {
+      "protocol": "Zero-shot (clean train only)",
+      "monitor_auroc": 0.7531098597481092,
+      "entropy_auroc": 0.4652116810608363,
+      "wins": "24/30"
+    },
+    "loco": {
+      "protocol": "LOCO (unseen corruption type)",
+      "monitor_auroc": 0.8136746234689594,
+      "entropy_auroc": 0.4807932910644264,
+      "wins": "26/30"
+    },
+    "severity_extrap": {
+      "protocol": "Severity extrapolation (sev 4-5 unseen)",
+      "monitor_auroc": 0.8305196483053935,
+      "entropy_auroc": 0.40821868889150614,
+      "wins": "8/12"
+    },
+    "in_distribution": {
+      "protocol": "In-distribution (upper bound)",
+      "monitor_auroc": 0.8273414473551151,
+      "entropy_auroc": 0.4652116810608363,
+      "wins": "26/30"
+    }
+  }
+}

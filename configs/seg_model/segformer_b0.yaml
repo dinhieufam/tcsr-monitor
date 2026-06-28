@@ -1,0 +1,6 @@
+name: segformer_b0
+architecture: segformer
+hf_model: nvidia/mit-b0
+num_labels: 1
+img_size: 512
+checkpoint: null

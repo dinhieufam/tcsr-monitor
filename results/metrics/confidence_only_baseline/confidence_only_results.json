@@ -1,0 +1,470 @@
+{
+  "experiment": "E3 Learned Confidence-Only Baseline",
+  "date": "2026-06-26",
+  "tau_col": "failure_tau0_75",
+  "seed": 0,
+  "n_boot": 1000,
+  "feature_columns": {
+    "full": [
+      "conf_mean_fg_prob",
+      "conf_max_prob",
+      "conf_mean_entropy",
+      "conf_max_entropy",
+      "conf_frac_uncertain",
+      "conf_margin",
+      "conf_frac_fg",
+      "shape_area_frac",
+      "shape_n_components",
+      "shape_boundary_len",
+      "shape_max_eccentricity",
+      "shape_max_solidity",
+      "shape_perimeter",
+      "temp_prev_iou",
+      "temp_centroid_jump",
+      "temp_area_delta",
+      "temp_rolling_iou_mean",
+      "temp_rolling_iou_std",
+      "qual_brightness",
+      "qual_blur_score",
+      "qual_contrast",
+      "qual_specular_ratio"
+    ],
+    "confidence_only": [
+      "conf_mean_fg_prob",
+      "conf_max_prob",
+      "conf_mean_entropy",
+      "conf_max_entropy",
+      "conf_frac_uncertain",
+      "conf_margin",
+      "conf_frac_fg"
+    ]
+  },
+  "clean_test_tau75": {
+    "full": {
+      "scope": "aggregate",
+      "model": "full_monitor",
+      "n": 825,
+      "n_failures": 57,
+      "failure_rate": 0.06909090909090909,
+      "auroc": 0.6721377010233918,
+      "auprc": 0.13189363346071395
+    },
+    "confidence_only": {
+      "scope": "aggregate",
+      "model": "learned_confidence_only",
+      "n": 825,
+      "n_failures": 57,
+      "failure_rate": 0.06909090909090909,
+      "auroc": 0.6205226608187134,
+      "auprc": 0.1520239470055166
+    },
+    "entropy": {
+      "scope": "aggregate",
+      "model": "entropy",
+      "n": 825,
+      "n_failures": 57,
+      "failure_rate": 0.06909090909090909,
+      "auroc": 0.4834612573099415,
+      "auprc": 0.22047790237411105
+    },
+    "full_minus_confidence_only": {
+      "delta_auroc": 0.05161504020467833,
+      "delta_auroc_ci_lo": -0.003311915408514391,
+      "delta_auroc_ci_hi": 0.11204798883014427,
+      "delta_auroc_n_boot": 1000,
+      "delta_auprc": -0.020130313544802658,
+      "delta_auprc_ci_lo": -0.059236514810274025,
+      "delta_auprc_ci_hi": 0.007655763956101804,
+      "delta_auprc_n_boot": 1000
+    },
+    "metadata": {
+      "tau_col": "failure_tau0_75",
+      "n_train": 1350,
+      "n_cal": 225,
+      "n_test": 825,
+      "n_train_failures": 77,
+      "n_cal_failures": 38,
+      "n_test_failures": 57
+    }
+  },
+  "loco_tau75": {
+    "folds": {
+      "brightness": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 2199,
+          "failure_rate": 0.5330909090909091,
+          "auroc": 0.9285745148956124,
+          "auprc": 0.9382592076677043
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 2199,
+          "failure_rate": 0.5330909090909091,
+          "auroc": 0.8983963021046573,
+          "auprc": 0.8916632723564529
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 2199,
+          "failure_rate": 0.5330909090909091,
+          "auroc": 0.2761763465598684,
+          "auprc": 0.44997201226917694
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": 0.030178212790955117,
+          "delta_auroc_ci_lo": 0.021689141143600838,
+          "delta_auroc_ci_hi": 0.038249150255631796,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": 0.04659593531125139,
+          "delta_auprc_ci_lo": 0.034192981430571694,
+          "delta_auprc_ci_hi": 0.05783787311126285,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "brightness",
+          "train_types": [
+            "contrast",
+            "gaussian_blur",
+            "gaussian_noise",
+            "jpeg_compression",
+            "motion_blur"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 12931,
+          "n_test_failures": 2199
+        }
+      },
+      "contrast": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 2945,
+          "failure_rate": 0.713939393939394,
+          "auroc": 0.9840617536186008,
+          "auprc": 0.9938931777327313
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 2945,
+          "failure_rate": 0.713939393939394,
+          "auroc": 0.981252769704469,
+          "auprc": 0.9928316497047915
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 2945,
+          "failure_rate": 0.713939393939394,
+          "auroc": 0.9756009898995712,
+          "auprc": 0.9911004900415876
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": 0.0028089839141318684,
+          "delta_auroc_ci_lo": 0.0012424628489191875,
+          "delta_auroc_ci_hi": 0.00442722783487521,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": 0.0010615280279397954,
+          "delta_auprc_ci_lo": 0.0004910481391566746,
+          "delta_auprc_ci_hi": 0.0016652448643552445,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "contrast",
+          "train_types": [
+            "brightness",
+            "gaussian_blur",
+            "gaussian_noise",
+            "jpeg_compression",
+            "motion_blur"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 10391,
+          "n_test_failures": 2945
+        }
+      },
+      "gaussian_blur": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 430,
+          "failure_rate": 0.10424242424242425,
+          "auroc": 0.8039415300374484,
+          "auprc": 0.4433782362951707
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 430,
+          "failure_rate": 0.10424242424242425,
+          "auroc": 0.7658514019573905,
+          "auprc": 0.39200370322991007
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 430,
+          "failure_rate": 0.10424242424242425,
+          "auroc": 0.4548588601818926,
+          "auprc": 0.21111225962195215
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": 0.03809012808005785,
+          "delta_auroc_ci_lo": 0.023145151916128627,
+          "delta_auroc_ci_hi": 0.05240149628984017,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": 0.05137453306526063,
+          "delta_auprc_ci_lo": 0.025016217589646388,
+          "delta_auprc_ci_hi": 0.07549490661726635,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "gaussian_blur",
+          "train_types": [
+            "brightness",
+            "contrast",
+            "gaussian_noise",
+            "jpeg_compression",
+            "motion_blur"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 16307,
+          "n_test_failures": 430
+        }
+      },
+      "gaussian_noise": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 2300,
+          "failure_rate": 0.5575757575757576,
+          "auroc": 0.9509397260273973,
+          "auprc": 0.9633383922435517
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 2300,
+          "failure_rate": 0.5575757575757576,
+          "auroc": 0.9632823108993448,
+          "auprc": 0.9753449556352849
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 2300,
+          "failure_rate": 0.5575757575757576,
+          "auroc": 0.28429243597379394,
+          "auprc": 0.4947957823318354
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": -0.012342584871947504,
+          "delta_auroc_ci_lo": -0.015815148520217554,
+          "delta_auroc_ci_hi": -0.00933683460682091,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": -0.012006563391733227,
+          "delta_auprc_ci_lo": -0.015378174666160599,
+          "delta_auprc_ci_hi": -0.00907775412143251,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "gaussian_noise",
+          "train_types": [
+            "brightness",
+            "contrast",
+            "gaussian_blur",
+            "jpeg_compression",
+            "motion_blur"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 12675,
+          "n_test_failures": 2300
+        }
+      },
+      "jpeg_compression": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 1015,
+          "failure_rate": 0.24606060606060606,
+          "auroc": 0.8508322113633123,
+          "auprc": 0.7044331101233215
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 1015,
+          "failure_rate": 0.24606060606060606,
+          "auroc": 0.8673573250122757,
+          "auprc": 0.7121423347685061
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 1015,
+          "failure_rate": 0.24606060606060606,
+          "auroc": 0.6492271870495621,
+          "auprc": 0.48492780687435155
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": -0.016525113648963363,
+          "delta_auroc_ci_lo": -0.0225769453878427,
+          "delta_auroc_ci_hi": -0.010446333083847405,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": -0.007709224645184531,
+          "delta_auprc_ci_lo": -0.017331149204409473,
+          "delta_auprc_ci_hi": 0.0029131929305958822,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "jpeg_compression",
+          "train_types": [
+            "brightness",
+            "contrast",
+            "gaussian_blur",
+            "gaussian_noise",
+            "motion_blur"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 14912,
+          "n_test_failures": 1015
+        }
+      },
+      "motion_blur": {
+        "full": {
+          "scope": "aggregate",
+          "model": "full_monitor",
+          "n": 4125,
+          "n_failures": 375,
+          "failure_rate": 0.09090909090909091,
+          "auroc": 0.7882343111111111,
+          "auprc": 0.4098232177799004
+        },
+        "confidence_only": {
+          "scope": "aggregate",
+          "model": "learned_confidence_only",
+          "n": 4125,
+          "n_failures": 375,
+          "failure_rate": 0.09090909090909091,
+          "auroc": 0.7888049777777778,
+          "auprc": 0.3723902111857183
+        },
+        "entropy": {
+          "scope": "aggregate",
+          "model": "entropy",
+          "n": 4125,
+          "n_failures": 375,
+          "failure_rate": 0.09090909090909091,
+          "auroc": 0.5169792,
+          "auprc": 0.2323959402430813
+        },
+        "full_minus_confidence_only": {
+          "delta_auroc": -0.0005706666666667193,
+          "delta_auroc_ci_lo": -0.011854375009482724,
+          "delta_auroc_ci_hi": 0.010907028777112264,
+          "delta_auroc_n_boot": 1000,
+          "delta_auprc": 0.03743300659418208,
+          "delta_auprc_ci_lo": 0.00768159756474557,
+          "delta_auprc_ci_hi": 0.06663299699856766,
+          "delta_auprc_n_boot": 1000
+        },
+        "metadata": {
+          "held_out": "motion_blur",
+          "train_types": [
+            "brightness",
+            "contrast",
+            "gaussian_blur",
+            "gaussian_noise",
+            "jpeg_compression"
+          ],
+          "n_train": 35100,
+          "n_corrupted_train": 33750,
+          "n_test": 4125,
+          "n_train_failures": 16326,
+          "n_test_failures": 375
+        }
+      }
+    },
+    "macro_average": {
+      "full_monitor_auroc": 0.8844306745089137,
+      "confidence_only_auroc": 0.8774908479093192,
+      "entropy_auroc": 0.5261891699441147,
+      "full_monitor_auprc": 0.7421875569737301,
+      "confidence_only_auprc": 0.7227293544801107,
+      "entropy_auprc": 0.4773840485636642
+    },
+    "micro_average": {
+      "full": {
+        "scope": "aggregate",
+        "model": "full_monitor",
+        "n": 24750,
+        "n_failures": 9264,
+        "failure_rate": 0.3743030303030303,
+        "auroc": 0.9200740251599472,
+        "auprc": 0.9026806149614582
+      },
+      "confidence_only": {
+        "scope": "aggregate",
+        "model": "learned_confidence_only",
+        "n": 24750,
+        "n_failures": 9264,
+        "failure_rate": 0.3743030303030303,
+        "auroc": 0.9120376179097193,
+        "auprc": 0.8879538188642708
+      },
+      "entropy": {
+        "scope": "aggregate",
+        "model": "entropy",
+        "n": 24750,
+        "n_failures": 9264,
+        "failure_rate": 0.3743030303030303,
+        "auroc": 0.5938921035312524,
+        "auprc": 0.633638201900679
+      },
+      "full_minus_confidence_only": {
+        "delta_auroc": 0.008036407250227917,
+        "delta_auroc_ci_lo": 0.005248132580770543,
+        "delta_auroc_ci_hi": 0.010714217478074713,
+        "delta_auroc_n_boot": 1000,
+        "delta_auprc": 0.014726796097187411,
+        "delta_auprc_ci_lo": 0.011910902830576045,
+        "delta_auprc_ci_hi": 0.017808210924257203,
+        "delta_auprc_n_boot": 1000
+      }
+    }
+  },
+  "outputs": {
+    "clean_scores": "experiments/confidence_only_baseline/clean_tau75/clean_tau75_scores.parquet",
+    "loco_scores": "experiments/confidence_only_baseline/loco_tau75/loco_tau75_scores.parquet",
+    "summary_csv": "results/metrics/confidence_only_baseline/confidence_only_summary.csv"
+  }
+}

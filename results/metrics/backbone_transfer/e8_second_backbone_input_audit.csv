@@ -1,0 +1,4 @@
+candidate,config_exists,checkpoint,checkpoint_exists,usable_prediction_dir,usable_for_e8
+deeplabv3p_resnet50,True,,False,,False
+segformer_b0,True,,False,,False
+unetpp_resnet34,True,,False,,False

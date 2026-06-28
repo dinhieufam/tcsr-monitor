@@ -1,0 +1,5 @@
+name: sam2_zeroshot
+architecture: sam2
+model_id: facebook/sam2-hiera-small
+prompt_mode: grid             # grid of point prompts; no fine-tuning
+checkpoint: null

@@ -1,0 +1,12 @@
+name: no_quality
+groups:
+  confidence: true
+  shape: true
+  temporal: true
+  quality: false
+  shift: false
+
+temporal_window: 5
+shift_n_neighbors: 10
+shift_method: mahalanobis
+encoder_layer: layer4

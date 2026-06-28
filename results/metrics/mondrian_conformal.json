@@ -1,0 +1,175 @@
+{
+  "corrupted_by_severity": {
+    "description": "Groups = corruption severity (1-5); corrupted test set",
+    "alpha": 0.1,
+    "naive_overall": {
+      "mean": 0.10087839205341215,
+      "std": 0.005981974498148048,
+      "ci_lo": 0.08864053517864173,
+      "ci_hi": 0.11419210595020529,
+      "coverage_ok": false
+    },
+    "mondrian_overall": {
+      "mean": 0.10029340327935304,
+      "std": 0.006216162879822168,
+      "ci_lo": 0.08859716981473492,
+      "ci_hi": 0.11230565405492247,
+      "coverage_ok": false
+    },
+    "per_group": {
+      "1": {
+        "naive": {
+          "mean": 0.5070694213117427,
+          "std": 0.033768040228043694,
+          "ci_lo": 0.440743699369937,
+          "ci_hi": 0.5863691781128361,
+          "coverage_ok": false
+        },
+        "mondrian": {
+          "mean": 0.10230830650408995,
+          "std": 0.03065584326627033,
+          "ci_lo": 0.05528738160850335,
+          "ci_hi": 0.1562961218401632,
+          "coverage_ok": false
+        }
+      },
+      "2": {
+        "naive": {
+          "mean": 0.22503450007866288,
+          "std": 0.01908516492972222,
+          "ci_lo": 0.18777481542247745,
+          "ci_hi": 0.2638097570532914,
+          "coverage_ok": false
+        },
+        "mondrian": {
+          "mean": 0.09840732232284129,
+          "std": 0.02173846911643055,
+          "ci_lo": 0.05986061946902655,
+          "ci_hi": 0.148012674175184,
+          "coverage_ok": false
+        }
+      },
+      "3": {
+        "naive": {
+          "mean": 0.09262663391908435,
+          "std": 0.0093423244686703,
+          "ci_lo": 0.07240511551155115,
+          "ci_hi": 0.10883066984736853,
+          "coverage_ok": false
+        },
+        "mondrian": {
+          "mean": 0.10052610888949774,
+          "std": 0.014029590212121162,
+          "ci_lo": 0.06950160702344745,
+          "ci_hi": 0.12887536823576864,
+          "coverage_ok": false
+        }
+      },
+      "4": {
+        "naive": {
+          "mean": 0.062007148225376466,
+          "std": 0.005306752598080044,
+          "ci_lo": 0.051114066193853426,
+          "ci_hi": 0.07244146021082751,
+          "coverage_ok": true
+        },
+        "mondrian": {
+          "mean": 0.1005044018099267,
+          "std": 0.012877981852938574,
+          "ci_lo": 0.08117391304347826,
+          "ci_hi": 0.1279860821155184,
+          "coverage_ok": false
+        }
+      },
+      "5": {
+        "naive": {
+          "mean": 0.05283276833758869,
+          "std": 0.005020451198829313,
+          "ci_lo": 0.04083075079427011,
+          "ci_hi": 0.062442221311189795,
+          "coverage_ok": true
+        },
+        "mondrian": {
+          "mean": 0.1002790081340447,
+          "std": 0.01079304615162242,
+          "ci_lo": 0.07751141876830281,
+          "ci_hi": 0.11906819635433322,
+          "coverage_ok": false
+        }
+      }
+    }
+  },
+  "clean_by_quality": {
+    "description": "Groups = image quality bins (blur_score tertiles); clean cal+test",
+    "alpha": 0.1,
+    "quality_bins": {
+      "0": "low-quality (blur<p33)",
+      "1": "mid-quality",
+      "2": "high-quality (blur>p67)"
+    },
+    "naive_overall": {
+      "mean": 0.07925432564311581,
+      "std": 0.047193951769268286,
+      "ci_lo": 0.019409879336349925,
+      "ci_hi": 0.19802476415094322,
+      "coverage_ok": false
+    },
+    "mondrian_overall": {
+      "mean": 0.07293067154413191,
+      "std": 0.0502488517151237,
+      "ci_lo": 0.0,
+      "ci_hi": 0.20964259796806964,
+      "coverage_ok": false
+    },
+    "per_group": {
+      "0": {
+        "naive": {
+          "mean": 0.13882015658858285,
+          "std": 0.08625706991689291,
+          "ci_lo": 0.018269230769230774,
+          "ci_hi": 0.3671717171717171,
+          "coverage_ok": false
+        },
+        "mondrian": {
+          "mean": 0.07516200467881379,
+          "std": 0.08344428255347118,
+          "ci_lo": 0.0,
+          "ci_hi": 0.28704545454545427,
+          "coverage_ok": false
+        }
+      },
+      "1": {
+        "naive": {
+          "mean": 0.05191310280706565,
+          "std": 0.04728808649391366,
+          "ci_lo": 0.0,
+          "ci_hi": 0.15384615384615385,
+          "coverage_ok": false
+        },
+        "mondrian": {
+          "mean": 0.05914305809429647,
+          "std": 0.07510838411240253,
+          "ci_lo": 0.0,
+          "ci_hi": 0.26309523809523766,
+          "coverage_ok": false
+        }
+      },
+      "2": {
+        "naive": {
+          "mean": 0.0,
+          "std": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "coverage_ok": true
+        },
+        "mondrian": {
+          "mean": 0.08707355144855145,
+          "std": 0.11255649284647659,
+          "ci_lo": 0.0,
+          "ci_hi": 0.34924242424242397,
+          "coverage_ok": false
+        }
+      }
+    }
+  }
+}

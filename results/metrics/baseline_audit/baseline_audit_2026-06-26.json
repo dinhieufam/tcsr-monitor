@@ -1,0 +1,75 @@
+{
+  "scope": "clean test and corrupted test baseline audit",
+  "inputs": {
+    "manifest": "data/processed/endovis2017/manifest.parquet",
+    "labels": "data/processed/endovis2017/labels.parquet",
+    "corrupted_manifest": "data/processed/endovis2017/corrupted_manifest.parquet",
+    "corrupted_labels": "data/processed/endovis2017/corrupted_labels.parquet"
+  },
+  "inventory": {
+    "clean": {
+      "missing_probs": 0,
+      "tta_present": 1050
+    },
+    "corrupted": {
+      "missing_probs": 0,
+      "tta_present": 0
+    },
+    "logits_found": false,
+    "embeddings_found": false
+  },
+  "baseline_status": {
+    "bl_max_softmax": {
+      "status": "kept",
+      "reason": "implemented and non-constant",
+      "n_unique": 16,
+      "std": 0.07020221822592501
+    },
+    "bl_entropy": {
+      "status": "kept",
+      "reason": "implemented and non-constant",
+      "n_unique": 2399,
+      "std": 0.01779587790593069
+    },
+    "bl_temporal_heuristic": {
+      "status": "kept",
+      "reason": "implemented and non-constant",
+      "n_unique": 2317,
+      "std": 0.29228982845597407
+    },
+    "bl_tta_variance": {
+      "status": "removed",
+      "reason": "score is not available for the corrupted-test scope",
+      "n_unique": 480,
+      "std": 0.008373318632211716
+    },
+    "bl_temperature_scaling": {
+      "status": "removed",
+      "reason": "required cache unavailable: logits for calibration",
+      "n_unique": 0,
+      "std": null
+    },
+    "bl_feature_distance_ood": {
+      "status": "removed",
+      "reason": "required cache unavailable: encoder embeddings",
+      "n_unique": 0,
+      "std": null
+    }
+  },
+  "kept_baselines": [
+    "bl_max_softmax",
+    "bl_entropy",
+    "bl_temporal_heuristic"
+  ],
+  "removed_baselines": [
+    "bl_tta_variance",
+    "bl_temperature_scaling",
+    "bl_feature_distance_ood"
+  ],
+  "outputs": {
+    "clean_corrected_parquet": "data/processed/endovis2017/baselines_corrected.parquet",
+    "corrupted_corrected_parquet": "data/processed/endovis2017/corrupted_baselines_corrected.parquet",
+    "metrics_csv": "results/metrics/baseline_audit/baseline_metrics_corrected.csv"
+  },
+  "paper_decision": "Report max-softmax, entropy, and temporal heuristic as implemented baselines. Remove or explicitly mark TTA variance, temperature scaling, and feature-distance OOD as unavailable under the current cross-split cache state."
+}

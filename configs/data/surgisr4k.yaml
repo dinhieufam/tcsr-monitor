@@ -1,0 +1,11 @@
+name: surgisr4k
+root: ${oc.env:SURGISR4K_ROOT,data/raw/surgisr4k}
+processed_dir: data/processed/surgisr4k
+num_classes: 2
+img_size: [512, 512]
+fps: 30
+train_sequences: []
+cal_sequences: []
+test_sequences: []          # fill in after download
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]

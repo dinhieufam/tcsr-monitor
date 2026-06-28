@@ -1,0 +1,2 @@
+name: max_softmax
+risk_score: one_minus_max_prob   # 1 - max(sigmoid(logit))

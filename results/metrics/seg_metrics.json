@@ -1,0 +1,10 @@
+{
+  "mean_iou": 0.8912887063099347,
+  "failure_rate_tau0.5": 0.01696969696969697,
+  "n_failures_tau0.5": 14,
+  "failure_rate_tau0.6": 0.04,
+  "n_failures_tau0.6": 33,
+  "failure_rate_tau0.75": 0.06909090909090909,
+  "n_failures_tau0.75": 57,
+  "mean_dice": 0.9392422150948537
+}

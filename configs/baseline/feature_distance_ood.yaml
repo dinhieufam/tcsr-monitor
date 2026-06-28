@@ -1,0 +1,4 @@
+name: feature_distance_ood
+risk_score: mahalanobis_distance  # distance from train embedding distribution
+encoder_layer: layer4
+fit_split: train

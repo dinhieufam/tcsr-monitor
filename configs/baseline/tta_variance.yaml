@@ -1,0 +1,3 @@
+name: tta_variance
+n_augmentations: 8
+risk_score: mean_pixel_variance  # variance of sigmoid(logit) across TTA passes

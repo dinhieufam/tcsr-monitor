@@ -1,0 +1,9 @@
+_target_: tcsr.monitor.temporal_nn.GRUMonitor
+hidden_size: 64
+num_layers: 2
+dropout: 0.2
+window_size: 10
+lr: 1e-3
+batch_size: 128
+max_epochs: 50
+patience: 10

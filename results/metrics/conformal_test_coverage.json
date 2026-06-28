@@ -1,0 +1,16 @@
+{
+  "alpha": 0.1,
+  "tau": 0.75,
+  "n_repeats": 200,
+  "cal_fraction": 0.5,
+  "test_miss_rate_mean": 0.0908674547876283,
+  "test_miss_rate_std": 0.05811593160752255,
+  "test_miss_rate_ci_lo": 0.0,
+  "test_miss_rate_ci_hi": 0.2182828282828283,
+  "mean_abstention_rate": 0.48937142857142857,
+  "mean_calibrated_threshold": 0.012065791943004287,
+  "certified_at_alpha": false,
+  "interpretation": "Realized test miss-rate 0.0909 \u00b1 0.0581 [0.0000, 0.2183], target \u03b1=0.1. Coverage not guaranteed at \u03b1=0.10 \u2014 motivates Mondrian conformal.",
+  "original_threshold_test_miss_rate": 0.7017543859649122,
+  "original_threshold_abstention_rate": 0.08848484848484849
+}

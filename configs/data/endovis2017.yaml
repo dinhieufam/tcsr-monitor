@@ -1,0 +1,12 @@
+name: endovis2017
+root: ${oc.env:ENDOVIS2017_ROOT,data/raw/endovis2017}
+processed_dir: data/processed/endovis2017
+num_classes: 2              # binary: instrument vs background
+img_size: [512, 512]
+fps: 25                     # used for FA/min and lead-time seconds conversion
+# Video-level splits (fixed, committed in manifest)
+train_sequences: [1, 2, 3, 4, 5, 6]
+cal_sequences: [7]
+test_sequences: [8, 9, 10]
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
