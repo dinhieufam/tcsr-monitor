@@ -1,4 +1,4 @@
-"""Generate the τ=0.75 qualitative failure panel for the ICARCV paper.
+"""Generate the τ=0.75 qualitative failure panel for the paper.
 
 Produces results/figures/qual_failures_tau75.png — a 2×3 grid showing
 raw endoscope frame | predicted-mask overlay | GT-mask overlay for each

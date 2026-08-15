@@ -68,3 +68,12 @@ logs/
 # Misc
 *.tmp
 *.bak
+
+# Paper source / builds — lives outside this repo
+paper/
+
+# Private reviewer correspondence — kept local only
+docs/OPENREVIEW_REVIEW.md
+
+# Internal planning doc — not needed to reproduce results
+docs/experiment_design_document.html

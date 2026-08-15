@@ -56,7 +56,7 @@ sha256sum "$CHOLECSEG8K_ROOT"/*.zip > data/checksums/cholecseg8k.sha256
 
 ## Optional: SurgiSR4K
 
-Not load-bearing for the core ICARCV claim. Include only if time allows.
+Not load-bearing for the core paper claim. Include only if time allows.
 
 ---
 

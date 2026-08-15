@@ -2,7 +2,7 @@
 
 **Temporal Conformal Surgical Risk Monitor** — a lightweight, model-agnostic runtime monitor that estimates calibrated failure risk for surgical instrument segmentation in real video.
 
-Submitted to **ICARCV 2026**. Framed as a perception-reliability safety layer for vision-guided surgical robot autonomy.
+Accepted (poster) at the **MICCAI 2026 Workshop on Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (UNSURE)**. Framed as a perception-reliability safety layer for vision-guided surgical robot autonomy.
 
 ---
 
@@ -14,19 +14,25 @@ Deep learning segmenters fail silently: high-confidence wrong masks with no exte
 
 ## Headline results
 
-<!-- Auto-filled from results/metrics/ after `make eval` -->
+| Method | τ=0.5 AUROC ↑ | τ=0.5 AUPRC ↑ | τ=0.75 AUROC ↑ | τ=0.75 AUPRC ↑ |
+|---|---|---|---|---|
+| **TCSR-Monitor (ours)** | **0.877** | 0.468 | **0.793** | **0.301** |
+| Predictive entropy | 0.764 | **0.635** | 0.483 | 0.220 |
+| Max-softmax | 0.536 | 0.087 | 0.509 | 0.085 |
+| Temporal heuristic | 0.338 | 0.013 | 0.460 | 0.074 |
 
-| Method | AUROC ↑ | AUPRC ↑ | Recall@90% ↑ | FA/min ↓ | Latency (ms) ↓ |
-|---|---|---|---|---|---|
-| TCSR-Monitor (XGB, all features) | — | — | — | — | — |
-| Max-softmax | — | — | — | — | — |
-| Predictive entropy | — | — | — | — | — |
-| Temperature scaling | — | — | — | — | — |
-| TTA variance | — | — | — | — | — |
-| Temporal heuristic | — | — | — | — | — |
-| Feature-distance OOD | — | — | — | — | — |
+*Held-out clean EndoVis 2017 test set (seed 0, point estimates — 825 frames from
+3 held-out sequences; frame-level scores are correlated within a sequence, see
+the paper for sequence-level bootstrap CIs). Failure prevalence: 1.7% at
+τ=0.5, 6.9% at τ=0.75. Monitor inference latency: 0.36 ms/frame (mean, CPU
+feature extraction + XGBoost).*
 
-*EndoVis 2017 test set, τ = 0.5, mean ± std over seeds {0,1,2}.*
+Under leave-one-corruption-out (LOCO) evaluation — the paper's core
+robustness claim — the monitor generalizes to unseen acquisition
+degradations: **0.814 AUROC** vs. **0.481** for predictive entropy (26/30
+corruption × severity cells won). See the paper for the full breakdown,
+circularity control, Mondrian conformal calibration, and SAM2 transfer
+results.
 
 ---
 
@@ -86,8 +92,11 @@ results/      Committed metrics tables and paper figures
 
 ```bibtex
 @inproceedings{tcsr2026,
-  title     = {TCSR-Monitor: Temporal Conformal Surgical Risk Monitoring for Instrument Segmentation},
-  booktitle = {ICARCV},
+  title     = {Beyond Uncertainty: Generalizable Failure Monitoring for Surgical
+               Segmentation under Acquisition Degradation},
+  author    = {Pham, Hieu D. and Cao, Dang P. M. and Huynh, Thanh Trung},
+  booktitle = {MICCAI Workshop on Uncertainty for Safe Utilization of Machine
+               Learning in Medical Imaging (UNSURE)},
   year      = {2026},
 }
 ```
